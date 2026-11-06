@@ -277,9 +277,10 @@ nav button{position:relative;z-index:1;color:#CDB9F2;gap:3px;padding:4px 0}
 nav button svg{transition:transform .35s cubic-bezier(.3,1.4,.5,1),color .2s}
 nav button.on{color:#fff!important;font-weight:700}
 nav button.on svg{transform:translateY(-27px);color:#fff}
-.nbump{position:absolute;top:-31px;left:calc(6px + (100% - 12px) * (var(--i) + .5) / 5);width:118px;height:32px;margin-left:-59px;pointer-events:none;transition:left .35s cubic-bezier(.3,1.2,.5,1)}
+.nbump{position:absolute;top:-31px;left:calc(6px + (100% - 12px) * (var(--i) + .5) / 5);width:150px;height:32px;margin-left:-75px;pointer-events:none;transition:left .35s cubic-bezier(.3,1.2,.5,1)}
 .nbump svg{display:block;width:100%;height:100%}
-.nbump i{position:absolute;left:50%;top:6px;width:50px;height:50px;margin-left:-25px;border-radius:50%;background:linear-gradient(145deg,#9B6BFF,#6B3FF0);box-shadow:0 6px 14px rgba(107,63,240,.45)}
+.nbump i{position:absolute;left:50%;top:6px;width:50px;height:50px;margin-left:-25px;border-radius:50%;background:linear-gradient(145deg,#FF9BC8,#E4579C);box-shadow:0 6px 16px rgba(228,87,156,.45)}
+#scr{padding-bottom:52px}
 @media(prefers-reduced-motion:reduce){.nbump,nav button svg{transition:none}}
 #tt{background:#29184D}
 /* 랜딩 */
@@ -512,7 +513,7 @@ function render(){clearTimeout(render.lt);if(S.pg==='land')render.lt=setTimeout(
 const T=[['home','홈'],['tl','일정'],['fund','자금'],['svc','서비스'],['my','마이']],cur={q:'svc'}[S.pg]||S.pg;
 const nv=$('#nv'),ni=T.findIndex(t=>t[0]===cur),pi=render.ni??ni;render.ni=ni;
 nv.style.display=o?'none':'flex';nv.style.setProperty('--i',pi);
-nv.innerHTML=(ni<0?'':`<span class="nbump" aria-hidden="true"><svg viewBox="0 0 118 32" preserveAspectRatio="none"><path d="M0 32C22 32 30 1 59 1S96 32 118 32V33H0Z" fill="#2B1252"/></svg><i></i></span>`)+T.map((t,k)=>`<button class="${k===pi?'on':''}" data-a="go" data-p="${t[0]}"${k===ni?' aria-current="page"':''}>${ic(t[0])}${t[1]}</button>`).join('');
+nv.innerHTML=(ni<0?'':`<span class="nbump" aria-hidden="true"><svg viewBox="0 0 150 32" preserveAspectRatio="none"><path d="M0 32C20 32 28 29 37 21C47 11 58 1 75 1S103 11 113 21C122 29 130 32 150 32V33H0Z" fill="#2B1252"/></svg><i></i></span>`)+T.map((t,k)=>`<button class="${k===pi?'on':''}" data-a="go" data-p="${t[0]}"${k===ni?' aria-current="page"':''}>${ic(t[0])}${t[1]}</button>`).join('');
 if(pi!==ni&&ni>=0)requestAnimationFrame(()=>requestAnimationFrame(()=>{nv.style.setProperty('--i',ni);nv.querySelectorAll('button').forEach((b,k)=>b.classList.toggle('on',k===ni))}));
 if(S.pg==='svc')est();sheet()}
 function est(){const v=SV[S.svc];if(!S.qp||!S.qe)S.qe=v.c(S.q);const[a,b]=S.qe;$('#est').textContent=a?mny(a).replace('원','')+'~'+mny(b):'범위를 골라 주세요';
