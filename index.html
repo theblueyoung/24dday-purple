@@ -311,11 +311,13 @@ nav button.on svg{transform:translateY(-19px);color:#fff}
 .soc3 .kk{background:#FEE500}.soc3 .nv{background:#03C75A}.soc3 .gg{background:#fff}
 .au .snsn{margin:12px 0 0}
 /* 화면 넘어갈 때: 소개 화면이 천천히 사라지고, 로그인 화면이 아래에서 부드럽게 떠오름 */
-.land.in.leave{animation:lvo .48s ease-in forwards}.land.in.leave .btn{pointer-events:none}
-@keyframes lvo{to{opacity:0;transform:translateY(-14px) scale(.985)}}
-.au{animation:aen .6s cubic-bezier(.2,.8,.2,1) both}
-.au .aucard{animation:aen .65s .1s cubic-bezier(.2,.8,.2,1) both}
-.au .orl,.au .soc3,.au .aubot{animation:aen .65s .2s cubic-bezier(.2,.8,.2,1) both}
+.land.in.leave{animation:lvo .7s cubic-bezier(.4,0,.2,1) forwards}.land.in.leave .btn{pointer-events:none}
+@keyframes lvo{to{opacity:0;transform:translateY(-18px) scale(.98)}}
+.au{animation:aen .85s cubic-bezier(.22,.8,.24,1) both}
+.au .aucard{animation:aen .9s .12s cubic-bezier(.22,.8,.24,1) both}
+.au .orl,.au .soc3,.au .aubot{animation:aen .9s .24s cubic-bezier(.22,.8,.24,1) both}
+.au.onbd{justify-content:center;padding-top:12px;padding-bottom:12px}
+#scr:has(.au){display:flex;flex-direction:column;padding-bottom:0}#scr:has(.au)>.au{flex:1 0 auto;min-height:0}
 @keyframes aen{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @media(prefers-reduced-motion:reduce){.land.in.leave,.au,.au .aucard,.au .orl,.au .soc3,.au .aubot{animation:none}}
 .aubot{width:100%;margin:auto 0 0;padding-top:18px;text-align:center;font-size:15px;font-weight:600;color:var(--pd)}
@@ -464,7 +466,7 @@ ${lg?'<div class="afg">비밀번호를 잊으셨나요?</div>':''}
 <div class="soc3">${SOC.map(x=>`<button class="${x[1]}" data-a="soc" data-v="${x[0]}" aria-label="${x[2]}로 ${lg?'로그인':'가입하기'}">${x[3]}</button>`).join('')}</div>
 <p class="aubot">${lg?'계정이 없으신가요?':'이미 계정이 있으신가요?'} <button class="alk" data-a="am" data-v="${lg?'join':'login'}">${lg?'회원가입':'로그인'}</button></p></div>`};
 
-P.onb=()=>`<div class="au"><button class="aulogo sm" data-a="go" data-p="auth" aria-label="앞 화면으로">${LOGO}</button><h1 class="aut" style="margin-top:16px">어떤 이사를<br>준비하세요?</h1><p class="aus">세 가지만 알려주시면 할 일 순서를 짜 드려요.<br>나중에 마이페이지에서 바꿀 수 있어요.</p><div class="aucard"><label style="margin:0">거래 유형</label><div class="seg2" style="margin:10px 0 0">${['매매','전세','월세'].map(t=>`<button class="${S.type===t?'sel':''}" data-a="type" data-v="${t}">${t}</button>`).join('')}</div>
+P.onb=()=>`<div class="au onbd"><button class="aulogo sm" data-a="go" data-p="auth" aria-label="앞 화면으로">${LOGO}</button><h1 class="aut" style="margin-top:16px">어떤 이사를<br>준비하세요?</h1><p class="aus">세 가지만 알려주시면 할 일 순서를 짜 드려요.<br>나중에 마이페이지에서 바꿀 수 있어요.</p><div class="aucard"><label style="margin:0">거래 유형</label><div class="seg2" style="margin:10px 0 0">${['매매','전세','월세'].map(t=>`<button class="${S.type===t?'sel':''}" data-a="type" data-v="${t}">${t}</button>`).join('')}</div>
 <label>잔금일</label><input type="date" id="ob" value="${iso(S.base)}"><small style="display:block;margin-top:6px">이사 들어가는 날이 아니라, 돈을 다 치르는 날이에요.</small>
 <label>계약금은 이미 냈나요?</label><div class="seg2" style="margin:10px 0 0">${[[0,'아직이요'],[1,'냈어요']].map(x=>`<button class="${(S.paid||0)===x[0]?'sel':''}" data-a="paid" data-v="${x[0]}">${x[1]}</button>`).join('')}</div><small style="display:block;margin-top:6px">냈다면 계약 단계 할 일을 완료로 표시해 드려요.</small>
 <button class="btn wh" style="margin-top:28px" data-a="start">시작하기</button></div></div>`;
@@ -617,7 +619,7 @@ else if(a==='dial'){S.sh=null;toast('전화 앱으로 연결돼요 (시연)')}
 else if(a==='close')S.sh=null;
 render()}
 document.addEventListener('click',e=>{const t=e.target.closest('[data-a]');if(!t)return;const a=t.dataset.a,d=t.dataset;
-if(a==='go'&&d.p==='auth'&&S.pg==='intro'&&!matchMedia('(prefers-reduced-motion:reduce)').matches){const l=document.querySelector('.land.in');if(l){if(l.classList.contains('leave'))return;l.classList.add('leave');setTimeout(()=>{if(S.pg==='intro')act(a,d)},480);return}}
+if(a==='go'&&d.p==='auth'&&S.pg==='intro'&&!matchMedia('(prefers-reduced-motion:reduce)').matches){const l=document.querySelector('.land.in');if(l){if(l.classList.contains('leave'))return;l.classList.add('leave');setTimeout(()=>{if(S.pg==='intro')act(a,d)},700);return}}
 act(a,d)});
 document.addEventListener('change',e=>{if(e.target.id==='bs'){const n=Date.parse(e.target.value);if(n){S.base=n;render();toast('직접 정하지 않은 일정이 같이 움직였어요')}}});
 document.addEventListener('input',e=>{const t=e.target;if(t.dataset.q){S.q[t.dataset.q]=t.type==='number'?+t.value:t.value}});
