@@ -310,6 +310,14 @@ nav button.on svg{transform:translateY(-19px);color:#fff}
 .soc3 svg{width:27px;height:27px}.soc3 .nv svg{width:21px;height:21px}
 .soc3 .kk{background:#FEE500}.soc3 .nv{background:#03C75A}.soc3 .gg{background:#fff}
 .au .snsn{margin:12px 0 0}
+/* 화면 넘어갈 때: 소개 화면이 천천히 사라지고, 로그인 화면이 아래에서 부드럽게 떠오름 */
+.land.in.leave{animation:lvo .48s ease-in forwards}.land.in.leave .btn{pointer-events:none}
+@keyframes lvo{to{opacity:0;transform:translateY(-14px) scale(.985)}}
+.au{animation:aen .6s cubic-bezier(.2,.8,.2,1) both}
+.au .aucard{animation:aen .65s .1s cubic-bezier(.2,.8,.2,1) both}
+.au .orl,.au .soc3,.au .aubot{animation:aen .65s .2s cubic-bezier(.2,.8,.2,1) both}
+@keyframes aen{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.land.in.leave,.au,.au .aucard,.au .orl,.au .soc3,.au .aubot{animation:none}}
 .aubot{width:100%;margin:auto 0 0;padding-top:18px;text-align:center;font-size:15px;font-weight:600;color:var(--pd)}
 .alk{border:0;background:none;padding:4px 2px;color:var(--p);font-size:15px;font-weight:800;text-decoration:underline;text-underline-offset:3px}
 </style></head>
@@ -608,7 +616,9 @@ else if(a==='send'){S.asked=1;S.sh=null;toast('문의를 보냈어요. 답변은
 else if(a==='dial'){S.sh=null;toast('전화 앱으로 연결돼요 (시연)')}
 else if(a==='close')S.sh=null;
 render()}
-document.addEventListener('click',e=>{const t=e.target.closest('[data-a]');if(t)act(t.dataset.a,t.dataset)});
+document.addEventListener('click',e=>{const t=e.target.closest('[data-a]');if(!t)return;const a=t.dataset.a,d=t.dataset;
+if(a==='go'&&d.p==='auth'&&S.pg==='intro'&&!matchMedia('(prefers-reduced-motion:reduce)').matches){const l=document.querySelector('.land.in');if(l){if(l.classList.contains('leave'))return;l.classList.add('leave');setTimeout(()=>{if(S.pg==='intro')act(a,d)},480);return}}
+act(a,d)});
 document.addEventListener('change',e=>{if(e.target.id==='bs'){const n=Date.parse(e.target.value);if(n){S.base=n;render();toast('직접 정하지 않은 일정이 같이 움직였어요')}}});
 document.addEventListener('input',e=>{const t=e.target;if(t.dataset.q){S.q[t.dataset.q]=t.type==='number'?+t.value:t.value}});
 render();
