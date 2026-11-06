@@ -287,7 +287,7 @@ nav button.on svg{transform:translateY(-19px);color:#fff}
 .land{background:linear-gradient(160deg,#8E67F2,#6234D0 60%,#43199C)}
 /* 시작 · 로그인 · 회원가입 · 이사 정보: 부드러운 입체 카드 */
 .land.in .lf{margin:auto 0;padding:24px 0}
-.land.in .btn.wt{background:linear-gradient(135deg,#F574AE,#D6458F);color:#fff;margin-top:0;font-size:18px;border-radius:27px;box-shadow:0 12px 24px -10px rgba(214,69,143,.75)}
+.land.in .btn.wt{background:#fff;color:var(--pd);margin-top:0;font-size:18px;border-radius:27px;box-shadow:0 12px 24px -12px rgba(20,5,70,.55)}
 .au{display:flex;flex-direction:column;align-items:center;min-height:100%;padding:26px 20px 22px;text-align:center}
 .aulogo{width:96px;height:96px;border:0;padding:0;border-radius:29px;display:block;background:none;box-shadow:12px 14px 26px -10px rgba(110,80,190,.4),-6px -6px 16px #fff}
 .aulogo svg{width:100%;height:100%;display:block}.aulogo rect{fill:#F8F5FF}.aulogo path[stroke="#fff"]{stroke:#6B3FF0}.aulogo path[fill="#fff"]{fill:#6B3FF0}
@@ -302,15 +302,15 @@ nav button.on svg{transform:translateY(-19px);color:#fff}
 .fic{position:absolute;left:9px;top:9px;width:34px;height:34px;border-radius:12px;background:#F4F0FC;box-shadow:0 3px 8px -3px rgba(110,80,190,.35);display:grid;place-items:center;color:#8C7BB0}.fic svg{width:18px;height:18px}
 .fe{position:absolute;right:6px;top:7px;width:38px;height:38px;border:0;background:none;color:#A497BD;display:grid;place-items:center;padding:0}.fe svg{width:20px;height:20px}
 .afg{text-align:right;margin:10px 4px 0;font-size:13.5px;font-weight:700;color:var(--p)}
-.btn.pink{background:linear-gradient(135deg,#F574AE,#D6458F);height:54px;padding:0;border-radius:27px;font-size:17px;margin-top:16px;box-shadow:0 12px 22px -10px rgba(214,69,143,.7)}
+.btn.wh{background:#fff;color:var(--pd);height:54px;padding:0;border-radius:27px;font-size:17px;margin-top:16px;border:1.5px solid rgba(122,77,255,.32);box-shadow:0 10px 20px -12px rgba(122,77,255,.55)}
 .orl{display:flex;align-items:center;gap:12px;width:100%;margin-top:18px;color:var(--mute);font-size:12.5px;font-weight:600}.orl::before,.orl::after{content:"";flex:1;height:1px;background:var(--ln)}
 .soc3{display:flex;gap:20px;justify-content:center;margin-top:12px}
 .soc3 button{width:58px;height:58px;border-radius:50%;border:0;padding:0;display:grid;place-items:center;box-shadow:0 12px 20px -10px rgba(110,80,190,.5),-4px -4px 10px rgba(255,255,255,.9),inset 0 0 0 1px rgba(255,255,255,.8)}
 .soc3 svg{width:27px;height:27px}.soc3 .nv svg{width:21px;height:21px}
 .soc3 .kk{background:#FEE500}.soc3 .nv{background:#03C75A}.soc3 .gg{background:#fff}
 .au .snsn{margin:12px 0 0}
-.aubot{width:100%;margin-top:auto;padding-top:16px}.aubot p{margin:0 0 8px;font-size:13.5px;color:var(--sub)}
-.aubot .btn2{width:100%;height:50px;border-radius:25px;border:1.5px solid rgba(122,77,255,.35);background:rgba(255,255,255,.7);color:var(--pd);font-weight:800;font-size:16px}
+.aubot{width:100%;margin:auto 0 0;padding-top:18px;text-align:center;font-size:15px;font-weight:600;color:var(--pd)}
+.alk{border:0;background:none;padding:4px 2px;color:var(--p);font-size:15px;font-weight:800;text-decoration:underline;text-underline-offset:3px}
 </style></head>
 <body><div id="app"><div id="scr"></div><nav id="nv"></nav><div id="sh"></div><button id="bn" data-a="ntl" aria-live="polite"></button><div id="tt"></div></div>
 <script>
@@ -433,7 +433,7 @@ function warn(){const c=E('cl'),m=E('mv');return dt(c)>=dt(m)?'<div class="wr">�
 
 const P={};
 P.land=()=>`<button class="land" data-a="landgo" aria-label="눌러서 시작하기">
-<div class="lgw"><i class="rp"></i><i class="rp r2"></i><div class="lg">${LOGO}</div></div><div class="ln">24dday</div><p class="lt">이사할 때 할 일과 일정을<br>순서대로 챙겨주는 이사 도우미</p>
+<div class="lgw"><i class="rp"></i><i class="rp r2"></i><div class="lg">${LOGO}</div></div><div class="ln">24dday</div><p class="lt">이사 일정과 할 일을<br>체크리스트로 도와주는 앱</p>
 <div class="ckl" aria-hidden="true"><b>이사 체크리스트</b><p><i>${ic('check',3)}</i>잔금일 등록</p><p><i>${ic('check',3)}</i>할 일 순서 정리</p><p><i>${ic('check',3)}</i>함께 준비하기</p></div>
 </button>`;
 function landGo(){const l=document.querySelector('.land');if(!l||l.classList.contains('out'))return;clearTimeout(render.lt);l.classList.add('out');setTimeout(()=>{if(S.pg==='land'){S.pg='intro';render()}},1800)}
@@ -444,22 +444,21 @@ P.intro=()=>`<div class="land in"><button class="lgb" data-a="go" data-p="land" 
 <button class="btn wt" data-a="go" data-p="auth">시작하기</button></div>`;
 
 const SOC=[['kakao','kk','카카오',`<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#191919" d="M12 3C6.48 3 2 6.5 2 10.8c0 2.78 1.86 5.22 4.66 6.6l-.95 3.48c-.08.3.26.54.52.37l4.15-2.74c.53.06 1.07.09 1.62.09 5.52 0 10-3.5 10-7.8S17.52 3 12 3z"/></svg>`],['naver','nv','네이버',`<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#fff" d="M15.6 12.8 8.2 2H2.5v20h5.9V11.2L15.8 22h5.7V2h-5.9z"/></svg>`],['google','gg','Google(Gmail)',`<svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>`]];
-P.auth=()=>{const lg=(S.am||'join')==='login';return`<div class="au"><button class="aulogo" data-a="go" data-p="intro" aria-label="앞 화면으로">${LOGO}</button><div class="aun">24dday</div>
+P.auth=()=>{const lg=(S.am||'login')==='login';return`<div class="au"><button class="aulogo" data-a="go" data-p="intro" aria-label="앞 화면으로">${LOGO}</button><div class="aun">24dday</div>
 <h1 class="aut">${lg?'다시 오셨네요!':'처음 오셨군요!'}</h1><p class="aus">${lg?'로그인하고 준비하던 이사를 이어서 해요.':'가입하고 새 이사를 등록해요.'}</p>
 <div class="aucard">${lg?'':`<div class="fi"><span class="fic">${ic('my',2)}</span><input id="jn" placeholder="이름 (예: 유영)" aria-label="이름" autocomplete="name"></div>`}
 <div class="fi"><span class="fic">${ic('mail',2)}</span><input id="ae" type="email" inputmode="email" placeholder="이메일" aria-label="이메일" autocomplete="email"></div>
 <div class="fi"><span class="fic">${ic('lock',2)}</span><input id="ap" type="password" placeholder="비밀번호 (8자 이상)" aria-label="비밀번호" autocomplete="${lg?'current-password':'new-password'}"><button type="button" class="fe" aria-label="비밀번호 보기" onclick="const i=this.parentNode.querySelector('input');i.type=i.type==='password'?'text':'password'">${ic('eye',2)}</button></div>
 ${lg?'<div class="afg">비밀번호를 잊으셨나요?</div>':''}
-<button class="btn pink" data-a="${lg?'login':'join'}">${lg?'로그인':'가입하고 이사 등록하기'}</button></div>
+<button class="btn wh" data-a="${lg?'login':'join'}">${lg?'로그인':'가입하고 이사 등록하기'}</button></div>
 <div class="orl">또는 간편하게 ${lg?'로그인':'가입'}</div>
 <div class="soc3">${SOC.map(x=>`<button class="${x[1]}" data-a="soc" data-v="${x[0]}" aria-label="${x[2]}로 ${lg?'로그인':'가입하기'}">${x[3]}</button>`).join('')}</div>
-<p class="snsn">시연용이에요. 실제 계정으로 연결되지 않아요.</p>
-<div class="aubot"><p>${lg?'아직 계정이 없으신가요?':'이미 계정이 있으신가요?'}</p><button class="btn2" data-a="am" data-v="${lg?'join':'login'}">${lg?'회원가입':'로그인'}</button></div></div>`};
+<p class="aubot">${lg?'계정이 없으신가요?':'이미 계정이 있으신가요?'} <button class="alk" data-a="am" data-v="${lg?'join':'login'}">${lg?'회원가입':'로그인'}</button></p></div>`};
 
 P.onb=()=>`<div class="au"><button class="aulogo sm" data-a="go" data-p="auth" aria-label="앞 화면으로">${LOGO}</button><h1 class="aut" style="margin-top:16px">어떤 이사를<br>준비하세요?</h1><p class="aus">세 가지만 알려주시면 할 일 순서를 짜 드려요.<br>나중에 마이페이지에서 바꿀 수 있어요.</p><div class="aucard"><label style="margin:0">거래 유형</label><div class="seg2" style="margin:10px 0 0">${['매매','전세','월세'].map(t=>`<button class="${S.type===t?'sel':''}" data-a="type" data-v="${t}">${t}</button>`).join('')}</div>
 <label>잔금일</label><input type="date" id="ob" value="${iso(S.base)}"><small style="display:block;margin-top:6px">이사 들어가는 날이 아니라, 돈을 다 치르는 날이에요.</small>
 <label>계약금은 이미 냈나요?</label><div class="seg2" style="margin:10px 0 0">${[[0,'아직이요'],[1,'냈어요']].map(x=>`<button class="${(S.paid||0)===x[0]?'sel':''}" data-a="paid" data-v="${x[0]}">${x[1]}</button>`).join('')}</div><small style="display:block;margin-top:6px">냈다면 계약 단계 할 일을 완료로 표시해 드려요.</small>
-<button class="btn pink" style="margin-top:28px" data-a="start">시작하기</button></div></div>`;
+<button class="btn wh" style="margin-top:28px" data-a="start">시작하기</button></div></div>`;
 
 P.home=()=>{const L=vis(),n=L.filter(done).length,pct=Math.round(n/L.length*100),cs=curStg(),T=L.filter(e=>sof(e)===cs.k),td=T.filter(done).length,d=dday();
 return`<div class="top"><div class="logo">${LOGO}24dday</div><div class="row" style="gap:8px">
@@ -555,14 +554,14 @@ else if(a==='am')S.am=d.v;
 else if(a==='landgo'){landGo();return}
 else if(a==='em')S.em=1;
 else if(a==='emb')S.em=0;
-else if(a==='soc'){const nm={kakao:'카카오',naver:'네이버',google:'Google'}[d.v];if((S.am||'join')==='login'){resetTo(0);S.pg='home';$('#scr').scrollTop=0;applyType();setTimeout(()=>banner(notes().find(n=>!S.rd[n.k])),700)}else{resetTo(1,'유영');S.pg='onb'}setTimeout(()=>toast(nm+' 계정으로 시연 '+((S.am||'join')==='login'?'로그인':'가입')+'했어요'),60)}
+else if(a==='soc'){const nm={kakao:'카카오',naver:'네이버',google:'Google'}[d.v];if((S.am||'login')==='login'){resetTo(0);S.pg='home';$('#scr').scrollTop=0;applyType();setTimeout(()=>banner(notes().find(n=>!S.rd[n.k])),700)}else{resetTo(1,'유영');S.pg='onb'}setTimeout(()=>toast(nm+' 계정으로 시연 '+((S.am||'login')==='login'?'로그인':'가입')+'했어요'),60)}
 else if(a==='paid')S.paid=+d.v;
 else if(a==='login'){resetTo(0);S.pg='home';$('#scr').scrollTop=0;applyType();setTimeout(()=>banner(notes().find(n=>!S.rd[n.k])),700)}
 else if(a==='join'){const n=$('#jn').value.trim();resetTo(1,n);S.pg='onb'}
 else if(a==='lgq')S.sh={t:'lgq'};
 else if(a==='wdq')S.sh={t:'wdq'};
-else if(a==='logout'){S.sh=null;S.pg='land';S.am='join'}
-else if(a==='wdx'){resetTo(1);S.pg='land';S.am='join';setTimeout(()=>toast('탈퇴했어요. 그동안 이용해 주셔서 고마워요'),50)}
+else if(a==='logout'){S.sh=null;S.pg='land';S.am='login'}
+else if(a==='wdx'){resetTo(1);S.pg='land';S.am='login';setTimeout(()=>toast('탈퇴했어요. 그동안 이용해 주셔서 고마워요'),50)}
 else if(a==='type')S.type=d.v;
 else if(a==='int')S.int=+d.v;
 else if(a==='start'){applyType();S.base=Date.parse($('#ob').value)||S.base;if(!S.int){const m={cl:0,mv:1,mi:2,fx:2,pho:1,hug:3,pay:3,gm:3,dis:-3,ad:7};for(const k in m)E(k).o=m[k]}if(S.fresh)S.ev.forEach(e=>{delete e.f;delete e.auto;if(S.paid&&e.st===1){e.dn=true;return}if(dt(e)<TODAY){e.f=TODAY;e.auto=1}});applyType();S.pg='home';setTimeout(()=>banner(notes().find(n=>!S.rd[n.k])),700)}
