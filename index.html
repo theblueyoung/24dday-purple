@@ -285,6 +285,32 @@ nav button.on svg{transform:translateY(-19px);color:#fff}
 #tt{background:#29184D}
 /* 랜딩 */
 .land{background:linear-gradient(160deg,#8E67F2,#6234D0 60%,#43199C)}
+/* 시작 · 로그인 · 회원가입 · 이사 정보: 부드러운 입체 카드 */
+.land.in .lf{margin:auto 0;padding:24px 0}
+.land.in .btn.wt{background:linear-gradient(135deg,#F574AE,#D6458F);color:#fff;margin-top:0;font-size:18px;border-radius:27px;box-shadow:0 12px 24px -10px rgba(214,69,143,.75)}
+.au{display:flex;flex-direction:column;align-items:center;min-height:100%;padding:26px 20px 22px;text-align:center}
+.aulogo{width:96px;height:96px;border:0;padding:0;border-radius:29px;display:block;background:none;box-shadow:12px 14px 26px -10px rgba(110,80,190,.4),-6px -6px 16px #fff}
+.aulogo svg{width:100%;height:100%;display:block}.aulogo rect{fill:#F8F5FF}.aulogo path[stroke="#fff"]{stroke:#6B3FF0}.aulogo path[fill="#fff"]{fill:#6B3FF0}
+.aulogo.sm{width:72px;height:72px;border-radius:22px}
+.aun{font-size:19px;font-weight:800;letter-spacing:-.6px;color:var(--pd);margin-top:12px}
+.aut{font-size:24px;line-height:1.35;margin:6px 0 0}.aus{margin:4px 0 0;font-size:14px;color:var(--sub)}
+.aucard{width:100%;margin-top:18px;padding:16px;border-radius:30px;text-align:left;background:rgba(255,255,255,.55);border:1px solid #fff;box-shadow:0 18px 36px -18px rgba(110,80,190,.35),inset 0 1px 0 #fff}
+.aucard label:first-child{margin-top:0}
+.aucard input,.aucard select{height:52px;padding:0 16px;margin-top:8px;border-radius:20px;border:1px solid #fff;background:linear-gradient(#fff,#F6F2FD);box-shadow:0 8px 16px -10px rgba(122,77,255,.4)}
+.fi{position:relative;margin-top:12px}.fi:first-child{margin-top:0}
+.fi input{margin:0;padding:0 48px 0 56px}
+.fic{position:absolute;left:9px;top:9px;width:34px;height:34px;border-radius:12px;background:#F4F0FC;box-shadow:0 3px 8px -3px rgba(110,80,190,.35);display:grid;place-items:center;color:#8C7BB0}.fic svg{width:18px;height:18px}
+.fe{position:absolute;right:6px;top:7px;width:38px;height:38px;border:0;background:none;color:#A497BD;display:grid;place-items:center;padding:0}.fe svg{width:20px;height:20px}
+.afg{text-align:right;margin:10px 4px 0;font-size:13.5px;font-weight:700;color:var(--p)}
+.btn.pink{background:linear-gradient(135deg,#F574AE,#D6458F);height:54px;padding:0;border-radius:27px;font-size:17px;margin-top:16px;box-shadow:0 12px 22px -10px rgba(214,69,143,.7)}
+.orl{display:flex;align-items:center;gap:12px;width:100%;margin-top:18px;color:var(--mute);font-size:12.5px;font-weight:600}.orl::before,.orl::after{content:"";flex:1;height:1px;background:var(--ln)}
+.soc3{display:flex;gap:20px;justify-content:center;margin-top:12px}
+.soc3 button{width:58px;height:58px;border-radius:50%;border:0;padding:0;display:grid;place-items:center;box-shadow:0 12px 20px -10px rgba(110,80,190,.5),-4px -4px 10px rgba(255,255,255,.9),inset 0 0 0 1px rgba(255,255,255,.8)}
+.soc3 svg{width:27px;height:27px}.soc3 .nv svg{width:21px;height:21px}
+.soc3 .kk{background:#FEE500}.soc3 .nv{background:#03C75A}.soc3 .gg{background:#fff}
+.au .snsn{margin:12px 0 0}
+.aubot{width:100%;margin-top:auto;padding-top:16px}.aubot p{margin:0 0 8px;font-size:13.5px;color:var(--sub)}
+.aubot .btn2{width:100%;height:50px;border-radius:25px;border:1.5px solid rgba(122,77,255,.35);background:rgba(255,255,255,.7);color:var(--pd);font-weight:800;font-size:16px}
 </style></head>
 <body><div id="app"><div id="scr"></div><nav id="nv"></nav><div id="sh"></div><button id="bn" data-a="ntl" aria-live="polite"></button><div id="tt"></div></div>
 <script>
@@ -368,7 +394,7 @@ const curStg=()=>SG().find(g=>vis().some(e=>sof(e)===g.k&&!done(e)))||SG().at(-1
 function toast(t){const x=$('#tt');x.textContent=t;x.style.display='block';clearTimeout(toast.h);toast.h=setTimeout(()=>x.style.display='none',2200)}
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 
-const IC={re:'<path d="M20 12a8 8 0 1 1-2.34-5.66L20 8.5"/><path d="M20 3.5v5h-5"/>',home:'<path d="M4 11l8-7 8 7v8a1 1 0 0 1-1 1h-4v-6H9v6H5a1 1 0 0 1-1-1z"/>',tl:'<rect x="4" y="5" width="16" height="15" rx="3"/><path d="M8 3v4M16 3v4M4 10h16"/>',fund:'<path d="M4 8a3 3 0 0 1 3-3h11v4"/><rect x="4" y="8" width="16" height="12" rx="3"/><circle cx="16" cy="14" r="1.2"/>',svc:'<path d="M4 9.5V20h16V9.5"/><path d="M3 9.5L5 4h14l2 5.5a2.5 2.5 0 0 1-4.5 1.3 2.5 2.5 0 0 1-4.5 0 2.5 2.5 0 0 1-4.5 0A2.5 2.5 0 0 1 3 9.5z"/><path d="M10 20v-5h4v5"/>',plus:'<path d="M12 5v14M5 12h14"/>',my:'<circle cx="12" cy="8.5" r="3.8"/><path d="M4.5 20c.8-3.8 3.8-5.8 7.5-5.8s6.7 2 7.5 5.8"/>',
+const IC={mail:'<rect x="3" y="5" width="18" height="14" rx="3"/><path d="M4 7l8 6 8-6"/>',lock:'<rect x="5" y="10" width="14" height="10" rx="3"/><path d="M8 10V8a4 4 0 0 1 8 0v2"/>',eye:'<path d="M2 12s3.6-6.5 10-6.5S22 12 22 12s-3.6 6.5-10 6.5S2 12 2 12z"/><circle cx="12" cy="12" r="3"/>',re:'<path d="M20 12a8 8 0 1 1-2.34-5.66L20 8.5"/><path d="M20 3.5v5h-5"/>',home:'<path d="M4 11l8-7 8 7v8a1 1 0 0 1-1 1h-4v-6H9v6H5a1 1 0 0 1-1-1z"/>',tl:'<rect x="4" y="5" width="16" height="15" rx="3"/><path d="M8 3v4M16 3v4M4 10h16"/>',fund:'<path d="M4 8a3 3 0 0 1 3-3h11v4"/><rect x="4" y="8" width="16" height="12" rx="3"/><circle cx="16" cy="14" r="1.2"/>',svc:'<path d="M4 9.5V20h16V9.5"/><path d="M3 9.5L5 4h14l2 5.5a2.5 2.5 0 0 1-4.5 1.3 2.5 2.5 0 0 1-4.5 0 2.5 2.5 0 0 1-4.5 0A2.5 2.5 0 0 1 3 9.5z"/><path d="M10 20v-5h4v5"/>',plus:'<path d="M12 5v14M5 12h14"/>',my:'<circle cx="12" cy="8.5" r="3.8"/><path d="M4.5 20c.8-3.8 3.8-5.8 7.5-5.8s6.7 2 7.5 5.8"/>',
 uplus:'<circle cx="9" cy="8" r="3.4"/><path d="M3 19.5c.6-3.3 3-5 6-5s5.4 1.7 6 5"/><path d="M18.5 7.5v6M15.5 10.5h6"/>',bell:'<path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.6 1.8H4.4z"/><path d="M10 21a2.2 2.2 0 0 0 4 0"/>',x:'<path d="M6 6l12 12M18 6L6 18"/>',check:'<path d="M5 12.5l4.5 4.5L19 7.5"/>',
 doc:'<path d="M7 3h7l4 4v13H7z"/><path d="M14 3v4h4M10 12h5M10 16h5"/>',coin:'<circle cx="12" cy="12" r="8"/><path d="M8.5 10l1.5 5 2-4 2 4 1.5-5"/>',key:'<circle cx="8" cy="12" r="3.5"/><path d="M11.5 12H21M17 12v3M20 12v2.5"/>',brush:'<rect x="4" y="4" width="13" height="5" rx="1.5"/><path d="M17 6.5h2.5v5H11v3.5M9.5 15h3v6h-3z"/>',spark:'<path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/><path d="M18 16l.8 2.2L21 19l-2.2.8L18 22l-.8-2.2L15 19l2.2-.8z"/>',truck:'<path d="M3 7h11v9H3zM14 10h4l3 3v3h-7"/><circle cx="7.5" cy="17.5" r="1.8"/><circle cx="17.5" cy="17.5" r="1.8"/>',pin:'<path d="M12 21s6-5.5 6-11a6 6 0 0 0-12 0c0 5.5 6 11 6 11z"/><circle cx="12" cy="10" r="2.2"/>',trash:'<path d="M5 7h14M9 7V4h6v3M7 7l1 13h8l1-13"/>',scale:'<path d="M12 4v16M6 20h12M5 8h14M5 8l-2.5 6a3 3 0 0 0 5 0zM19 8l-2.5 6a3 3 0 0 0 5 0z"/>',bank:'<path d="M3 9l9-5 9 5M5 10v7M10 10v7M14 10v7M19 10v7M3 20h18"/>'};
 const ic=(k,sw=1.8)=>`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="${sw}" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${IC[k]}</svg>`;
@@ -417,21 +443,23 @@ P.intro=()=>`<div class="land in"><button class="lgb" data-a="go" data-p="land" 
 <ul class="lf"><li>${ic('tl',2)}<span><b>잔금일만 넣으면</b>할 일 순서를 자동으로 짜고, 수정도 할 수 있어요</span></li><li>${ic('uplus',2)}<span><b>함께 진행할 사람과</b>일정을 나눠 맡아요</span></li><li>${ic('svc',2)}<span><b>이사·청소·법무사</b>견적을 한 번에 봐요</span></li></ul>
 <button class="btn wt" data-a="go" data-p="auth">시작하기</button></div>`;
 
-P.auth=()=>{const m=S.am||'join';return`<div class="hd"><div><button class="logo lgk" data-a="go" data-p="intro" aria-label="앞 화면으로">${LOGO}24dday</button><h1 style="margin-top:20px">${m==='login'?'다시 오셨네요!':'처음 오셨군요!'}</h1><p class="sb" style="margin:6px 0 0">${m==='login'?'로그인하고 준비하던 이사를 이어서 해요.':'가입하고 새 이사를 등록해요.'}</p></div></div>
-<div class="seg2" style="margin-top:4px">${[['login','로그인'],['join','회원가입']].map(x=>`<button class="${m===x[0]?'sel':''}" data-a="am" data-v="${x[0]}">${x[1]}</button>`).join('')}</div>
-${!S.em?`<div class="c sns" style="border-top:0;padding-top:0">${[['kakao','kk','카카오',`<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#191919" d="M12 3C6.48 3 2 6.5 2 10.8c0 2.78 1.86 5.22 4.66 6.6l-.95 3.48c-.08.3.26.54.52.37l4.15-2.74c.53.06 1.07.09 1.62.09 5.52 0 10-3.5 10-7.8S17.52 3 12 3z"/></svg>`],['naver','nv','네이버',`<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#fff" d="M15.6 12.8 8.2 2H2.5v20h5.9V11.2L15.8 22h5.7V2h-5.9z"/></svg>`],['google','gg','Google(Gmail)',`<svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>`]].map(x=>`<button class="${x[1]}" data-a="soc" data-v="${x[0]}">${x[3]}${x[2]}로 ${m==='login'?'로그인':'가입하기'}</button>`).join('')}<button class="em" data-a="em"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M4 7l8 6 8-6"/></svg>이메일로 ${m==='login'?'로그인':'가입하기'}</button><p class="snsn">시연용이에요. 실제 계정으로 연결되지 않아요.</p></div>`:`
-<div class="c" style="border-top:0;padding-top:0">${m==='join'?'<label>이름</label><input id="jn" placeholder="예: 유영">':''}
-<label>이메일</label><input id="ae" type="email" inputmode="email" placeholder="you@example.com" value="">
-<label>비밀번호</label><input id="ap" type="password" placeholder="8자 이상" value="">
-<button class="btn" style="margin-top:24px" data-a="${m==='login'?'login':'join'}">${m==='login'?'로그인':'가입하고 이사 등록하기'}</button>
-${m==='login'?'<p class="sb" style="text-align:center;margin-top:14px">비밀번호를 잊으셨나요?</p>':''}
-<button class="emb" data-a="emb">다른 방법으로 ${m==='login'?'로그인':'가입'}하기</button>
-</div>`}`};
+const SOC=[['kakao','kk','카카오',`<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#191919" d="M12 3C6.48 3 2 6.5 2 10.8c0 2.78 1.86 5.22 4.66 6.6l-.95 3.48c-.08.3.26.54.52.37l4.15-2.74c.53.06 1.07.09 1.62.09 5.52 0 10-3.5 10-7.8S17.52 3 12 3z"/></svg>`],['naver','nv','네이버',`<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#fff" d="M15.6 12.8 8.2 2H2.5v20h5.9V11.2L15.8 22h5.7V2h-5.9z"/></svg>`],['google','gg','Google(Gmail)',`<svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>`]];
+P.auth=()=>{const lg=(S.am||'join')==='login';return`<div class="au"><button class="aulogo" data-a="go" data-p="intro" aria-label="앞 화면으로">${LOGO}</button><div class="aun">24dday</div>
+<h1 class="aut">${lg?'다시 오셨네요!':'처음 오셨군요!'}</h1><p class="aus">${lg?'로그인하고 준비하던 이사를 이어서 해요.':'가입하고 새 이사를 등록해요.'}</p>
+<div class="aucard">${lg?'':`<div class="fi"><span class="fic">${ic('my',2)}</span><input id="jn" placeholder="이름 (예: 유영)" aria-label="이름" autocomplete="name"></div>`}
+<div class="fi"><span class="fic">${ic('mail',2)}</span><input id="ae" type="email" inputmode="email" placeholder="이메일" aria-label="이메일" autocomplete="email"></div>
+<div class="fi"><span class="fic">${ic('lock',2)}</span><input id="ap" type="password" placeholder="비밀번호 (8자 이상)" aria-label="비밀번호" autocomplete="${lg?'current-password':'new-password'}"><button type="button" class="fe" aria-label="비밀번호 보기" onclick="const i=this.parentNode.querySelector('input');i.type=i.type==='password'?'text':'password'">${ic('eye',2)}</button></div>
+${lg?'<div class="afg">비밀번호를 잊으셨나요?</div>':''}
+<button class="btn pink" data-a="${lg?'login':'join'}">${lg?'로그인':'가입하고 이사 등록하기'}</button></div>
+<div class="orl">또는 간편하게 ${lg?'로그인':'가입'}</div>
+<div class="soc3">${SOC.map(x=>`<button class="${x[1]}" data-a="soc" data-v="${x[0]}" aria-label="${x[2]}로 ${lg?'로그인':'가입하기'}">${x[3]}</button>`).join('')}</div>
+<p class="snsn">시연용이에요. 실제 계정으로 연결되지 않아요.</p>
+<div class="aubot"><p>${lg?'아직 계정이 없으신가요?':'이미 계정이 있으신가요?'}</p><button class="btn2" data-a="am" data-v="${lg?'join':'login'}">${lg?'회원가입':'로그인'}</button></div></div>`};
 
-P.onb=()=>`<div class="hd"><div><button class="logo lgk" data-a="go" data-p="auth" aria-label="앞 화면으로">${LOGO}24dday</button><h1 style="margin-top:20px">어떤 이사를<br>준비하세요?</h1><p class="sb" style="margin:6px 0 0">세 가지만 알려주시면 할 일 순서를 짜 드려요. 나중에 마이페이지에서 바꿀 수 있어요.</p></div></div><div class="c" style="border-top:0"><label style="margin:0">거래 유형</label><div class="seg2" style="margin:10px 0 0">${['매매','전세','월세'].map(t=>`<button class="${S.type===t?'sel':''}" data-a="type" data-v="${t}">${t}</button>`).join('')}</div>
+P.onb=()=>`<div class="au"><button class="aulogo sm" data-a="go" data-p="auth" aria-label="앞 화면으로">${LOGO}</button><h1 class="aut" style="margin-top:16px">어떤 이사를<br>준비하세요?</h1><p class="aus">세 가지만 알려주시면 할 일 순서를 짜 드려요.<br>나중에 마이페이지에서 바꿀 수 있어요.</p><div class="aucard"><label style="margin:0">거래 유형</label><div class="seg2" style="margin:10px 0 0">${['매매','전세','월세'].map(t=>`<button class="${S.type===t?'sel':''}" data-a="type" data-v="${t}">${t}</button>`).join('')}</div>
 <label>잔금일</label><input type="date" id="ob" value="${iso(S.base)}"><small style="display:block;margin-top:6px">이사 들어가는 날이 아니라, 돈을 다 치르는 날이에요.</small>
 <label>계약금은 이미 냈나요?</label><div class="seg2" style="margin:10px 0 0">${[[0,'아직이요'],[1,'냈어요']].map(x=>`<button class="${(S.paid||0)===x[0]?'sel':''}" data-a="paid" data-v="${x[0]}">${x[1]}</button>`).join('')}</div><small style="display:block;margin-top:6px">냈다면 계약 단계 할 일을 완료로 표시해 드려요.</small>
-<button class="btn" style="margin-top:28px" data-a="start">시작하기</button></div>`;
+<button class="btn pink" style="margin-top:28px" data-a="start">시작하기</button></div></div>`;
 
 P.home=()=>{const L=vis(),n=L.filter(done).length,pct=Math.round(n/L.length*100),cs=curStg(),T=L.filter(e=>sof(e)===cs.k),td=T.filter(done).length,d=dday();
 return`<div class="top"><div class="logo">${LOGO}24dday</div><div class="row" style="gap:8px">
