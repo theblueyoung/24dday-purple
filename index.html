@@ -227,6 +227,59 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
 .sns .em{background:var(--gy);color:var(--ink)}
 .snsn{text-align:center;font-size:12.5px;color:var(--mute);margin:14px 0 0}
 .emb{display:block;margin:14px auto 0;border:0;background:none;color:var(--sub);font-size:14px;font-weight:600;text-decoration:underline;text-underline-offset:3px}
+/* ── 보라 그라데이션 테마: 연보라 배경 위에 흰 유리 카드로 구역을 나눔 ── */
+:root{--ink:#29184D;--ink2:#4F3F6B;--sub:#73658D;--mute:#A497BD;--ln:rgba(85,53,139,.12);--gy:#F1ECFA;--pink:#FF76AD;--gold:#FFE17B;--glass:rgba(255,255,255,.78)}
+body{background:radial-gradient(ellipse at 15% 10%,#EDDDFF 0,transparent 35%),radial-gradient(ellipse at 88% 85%,#D7B8FF 0,transparent 32%),linear-gradient(145deg,#B697F2,#8B65DF 48%,#D9BAFF)}
+#app{background:linear-gradient(160deg,#EEE4FF 0%,#DCC8FF 52%,#F1DDFF 100%);box-shadow:0 0 60px rgba(36,15,79,.25)}
+.hd{padding:24px 20px 4px}
+.c{background:var(--glass);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.9)!important;border-radius:22px;margin:14px 16px 0;padding:18px 16px!important;box-shadow:0 7px 20px rgba(75,42,119,.07)}
+.c .li+.li{border-top:1px solid var(--ln)}
+.c.g-cur{border:1.5px solid rgba(122,77,255,.45)!important;box-shadow:0 10px 24px rgba(99,64,189,.16)}
+.c.g-dn{background:rgba(255,255,255,.6)}
+/* 상단 */
+.top{padding:14px 18px 10px}
+.logo svg{filter:drop-shadow(0 6px 10px rgba(104,65,189,.3))}
+.inv{background:rgba(255,255,255,.7);border:1px solid #fff;color:#523579}
+.bell{background:rgba(255,255,255,.6);border:1px solid #fff;color:#4B2C7D}
+.bell.off{border-color:#FFD6DC}
+/* 히어로 */
+.hero{margin:6px 16px 0;border-radius:27px;background:linear-gradient(137deg,#5425A8 0%,#713BE1 54%,#9564EF 100%);box-shadow:0 14px 28px rgba(87,48,149,.28)}
+.hero::before,.hero::after{background:rgba(255,255,255,.06)}
+.pc b{color:var(--gold)}
+.yb{background:rgba(41,18,94,.4)}.yb i{background:linear-gradient(90deg,#FFE789,#FFB4C9)}
+.st.cur i{background:var(--pink)}
+/* 버튼 · 칩 · 체크 */
+.btn{background:linear-gradient(135deg,#7A4DFF,#5D32C7);box-shadow:0 8px 18px -10px rgba(93,50,199,.7)}
+.btn.lv{background:#EEE6FF;color:#5B33E0;box-shadow:none}.btn.gh{box-shadow:none}.btn.gy{background:var(--gy);box-shadow:none}.btn.rd{background:var(--co);box-shadow:0 8px 18px -10px rgba(240,68,82,.7)}.btn.wt{box-shadow:none}
+.bo{background:#EEE6FF;color:#72519C;border-radius:9px}
+.cb{border-color:#A492C2;background:rgba(255,255,255,.7)}
+.ti.sm.yl{background:#FFEBF3}
+.av{box-shadow:0 0 0 2px #fff}
+.seg2{background:rgba(255,255,255,.55);border:1px solid #fff;margin:0 16px 18px}
+.seg2 button.sel{box-shadow:0 3px 10px rgba(75,42,119,.12)}
+.pill button,.chips button{background:rgba(255,255,255,.7);border:1px solid #fff}
+/* 단계 카드 (홈) – 지금 단계는 진한 보라로 확 띄움 */
+.sc{background:rgba(255,255,255,.7);border:1px solid #fff}
+.sc.cur{background:linear-gradient(155deg,#6935CF,#8554E9);border-color:rgba(255,255,255,.7);color:#fff;box-shadow:0 8px 16px rgba(99,64,189,.25)}
+.sc.cur small{color:rgba(255,255,255,.8)}.sc.cur .sa{color:#fff}
+.stg.cur{background:var(--pink);color:#522348}
+.sc.fu{background:rgba(255,255,255,.45)}
+.stl{border-left-color:rgba(122,77,255,.22)}
+/* 자금 · 서비스 진한 카드 */
+.dk,.eb{background:linear-gradient(137deg,#5425A8 0%,#713BE1 54%,#9564EF 100%);box-shadow:0 14px 28px rgba(87,48,149,.25);border-radius:24px}
+.eb{margin:0 16px 0}.ep{color:var(--gold)}
+.wr{margin:0 16px 4px}
+.vc,.cat{background:rgba(255,255,255,.7);border:1px solid #fff}
+.nbig{background:rgba(241,236,250,.9)}
+/* 하단 메뉴: 진한 보라 띠 + 선택된 탭은 분홍 알약 */
+nav{background:linear-gradient(100deg,#34135F,#4B2580);border-top:1px solid rgba(255,255,255,.2);box-shadow:0 -5px 18px rgba(62,27,103,.15);padding:7px 6px 6px}
+nav button{color:#D9C8F3;gap:2px;padding:4px 0}
+nav button svg{width:36px;height:32px;padding:5px 7px;border-radius:12px}
+nav button.on{color:#fff!important;font-weight:700}
+nav button.on svg{background:linear-gradient(145deg,#FF83B6,#FFC0D6);color:#552158;box-shadow:0 4px 12px rgba(19,11,42,.3)}
+#tt{background:#29184D}
+/* 랜딩 */
+.land{background:linear-gradient(160deg,#8E67F2,#6234D0 60%,#43199C)}
 </style></head>
 <body><div id="app"><div id="scr"></div><nav id="nv"></nav><div id="sh"></div><button id="bn" data-a="ntl" aria-live="polite"></button><div id="tt"></div></div>
 <script>
@@ -322,7 +375,8 @@ const cb=e=>`<button class="cb ${done(e)?'on':''}" data-a="chk" data-id="${e.id}
 const CALM=()=>$('#app').classList.contains('calm');
 const PCC=[['#6B3FF0','#fff'],['#C9B6FF','#2A1170'],['#9B7BFF','#fff'],['#E4DAFF','#4B2BBF'],['#4B2BBF','#fff'],['#B39BFF','#2A1170']];
 const pcol=c=>PCC[c];
-const who=w=>{const p=S.pp.find(x=>x.id===w)||S.pp[0];return{n:p.n,col:'var(--ob)',fg:'var(--of)'}};
+const AVC=[['#F6C7DD','#713C62'],['#C7E4FB','#2D5C81'],['#CDEFDF','#1F6B4D'],['#FFE6B3','#7A5410'],['#E4DBFF','#4B2BBF'],['#FFD8CC','#8A3D22']];
+const who=w=>{const p=S.pp.find(x=>x.id===w)||S.pp[0],k=AVC[(p.c||0)%AVC.length];return{n:p.n,col:k[0],fg:k[1]}};
 const short=n=>n.length>2?n.slice(1,2):n.slice(0,1);
 const av=(w,lg)=>{const p=who(w);return`<span class="av${lg?' lg':''}" style="background:${p.col};color:${p.fg}" title="${esc(p.n)}">${esc(short(p.n))}</span>`};
 const bd=(w,lg)=>w==='all'?`<span class="avs sm" title="함께">${S.pp.map(p=>av(p.id)).join('')}</span>`:av(w,lg);
@@ -397,7 +451,7 @@ ${T.map(e=>`<div class="li">${cb(e)}<div><div class="nm ${done(e)?'dnx':''}">${e
 `<div class="c"><button class="btn" style="margin:0" data-a="add">+ 할 일 추가</button></div>`};
 
 P.fund=()=>{const need=15000,tot=S.banks.reduce((a,b)=>a+b,0),gap=Math.max(need-tot,0),nm=['국민은행','신한은행','카카오뱅크'],cl=['#B9A2FF','#8B5CFF','#FFD43B'];
-return`<div class="hd"><div><h2>자금</h2><p class="sb" style="margin:6px 0 0">이사에 필요한 돈을 미리 계획하고 준비해요</p></div></div><div style="padding:0 20px 24px"><div class="dk"><small>필요 금액</small><div style="font-size:30px;font-weight:800">${mny(need)}</div>
+return`<div class="hd"><div><h2>자금</h2><p class="sb" style="margin:6px 0 0">이사에 필요한 돈을 미리 계획하고 준비해요</p></div></div><div style="padding:14px 16px 0"><div class="dk"><small>필요 금액</small><div style="font-size:30px;font-weight:800">${mny(need)}</div>
 <div class="bar" style="margin:14px 0 8px;height:10px;background:rgba(255,255,255,.18)">${S.banks.map((b,i)=>`<i style="width:${Math.min(b/need*100,100)}%;background:${cl[i]}"></i>`).join('')}</div>
 <div class="row sp"><small>준비 ${mny(tot)}</small><small style="font-weight:700;color:${gap?'#FF9AA2':'#7BE3B8'}">${gap?'부족 '+mny(gap):'충분해요'}</small></div></div></div>
 <div class="c"><div class="shd"><div class="sh2">은행별 보유액 <small style="font-weight:500">(만원)</small></div><button class="pb" data-a="recalc">다시 계산</button></div>${nm.map((n,i)=>`<label>${n}</label><input type="number" inputmode="numeric" data-b="${i}" value="${S.banks[i]}">`).join('')}<p class="sb" style="margin:14px 0 0">금액을 고친 뒤 다시 계산을 눌러 주세요. 계좌 자동 연결은 다음 버전에서 만나요.</p></div>
@@ -423,7 +477,7 @@ ${O.length?O.map(p=>{const a=L.filter(e=>e.w===p.id);return`<div class="li">${av
 <div class="c"><div class="sh2">업무 분배</div>${[...S.pp.map(p=>p.id),'all'].map(w=>{const a=L.filter(e=>e.w===w),d=a.filter(done).length;return`<div style="margin-top:16px"><div class="row sp"><span class="row" style="gap:8px">${bd(w)}<span style="font-weight:600">${w==='all'?'함께':esc(who(w).n)}</span></span><small>${d} / ${a.length} 완료</small></div><div class="bar" style="margin-top:8px"><i style="width:${a.length?d/a.length*100:0}%;background:var(--p)"></i></div></div>`}).join('')}</div>
 <div class="c" id="ntc"><div class="sh2" style="margin-bottom:14px">알림 설정</div><div class="nbig ${S.bell?'yes':''}"><div><b>알림 받기</b><small>${S.bell?'켜져 있어요. 받고 싶은 알림을 골라 주세요.':'꺼져 있어요. 알림을 하나도 받지 않아요.'}</small></div><button class="tg big ${S.bell?'on':''}" data-a="bell" role="switch" aria-checked="${!!S.bell}" aria-label="알림 받기"><i></i></button></div>
 ${[['due','할 일 날짜 하루 전','D-1에 미리 알려드려요'],['mate','공유자가 할 일을 끝냈을 때','함께하는 사람이 체크하면 알려드려요'],['svc','업체 상담 답변','상담 신청에 답이 오면 알려드려요'],['stg','다음 단계로 넘어갈 때','한 단계를 모두 마치면 알려드려요']].map(n=>`<div class="li${S.bell?'':' off'}"><button class="cb ${S.nt[n[0]]&&S.bell?'on':''}" data-a="nt" data-k="${n[0]}" aria-pressed="${!!S.nt[n[0]]}" aria-label="${n[1]}" ${S.bell?'':'disabled'}>${ic('check',3)}</button><div><div class="nm">${n[1]}</div><small>${n[2]}</small></div></div>`).join('')}</div>
-<div style="padding:8px 20px 0"><button class="btn rd" data-a="lgq">로그아웃</button></div>`};
+<div style="padding:14px 16px 0"><button class="btn rd" data-a="lgq">로그아웃</button></div>`};
 
 function sheet(){const x=S.sh,h=$('#sh');if(!x){h.style.display='none';return}
 let b='';
