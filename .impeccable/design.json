@@ -1,507 +1,342 @@
 {
  "schemaVersion": 2,
- "generatedAt": "2026-11-25T14:27:16.668777+00:00",
+ "generatedAt": "2026-11-25T10:49:35.797791+00:00",
  "title": "Design System: 24dday",
  "extensions": {
   "colorMeta": {
-   "navy-night": {
+   "violet-primary": {
     "role": "primary",
-    "displayName": "navy-night",
-    "canonical": "#0F1B2D",
+    "displayName": "바이올렛",
+    "canonical": "#7A4DFF",
     "tonalRamp": [
-     "#192433",
-     "#273B58",
-     "#355688",
-     "#4073BF",
-     "#7395C9",
-     "#A3B8D7",
-     "#CCD6E6",
-     "#EEF1F6"
+     "#190C40",
+     "#270E71",
+     "#350BB2",
+     "#4000FF",
+     "#7348F5",
+     "#A389F1",
+     "#CCBFF3",
+     "#EEEBFA"
     ]
    },
-   "indigo-deep": {
+   "violet-deep": {
     "role": "primary",
-    "displayName": "indigo-deep",
-    "canonical": "#2C45D9",
+    "displayName": "딥 바이올렛",
+    "canonical": "#4B2BBF",
     "tonalRamp": [
-     "#141938",
-     "#1D2762",
-     "#243598",
-     "#2741D8",
-     "#6273DA",
-     "#99A3E1",
-     "#C7CCEB",
-     "#EDEFF8"
+     "#1D1637",
+     "#2E215F",
+     "#402A93",
+     "#522FD0",
+     "#7F67D5",
+     "#AA9CDE",
+     "#CFC8E9",
+     "#F0EDF7"
     ]
    },
-   "indigo-hero-top": {
+   "violet-deepest": {
     "role": "primary",
-    "displayName": "indigo-hero-top",
-    "canonical": "#5068FE",
+    "displayName": "가장 진한 바이올렛",
+    "canonical": "#3A1C9C",
     "tonalRamp": [
-     "#0C1340",
-     "#0F1C71",
-     "#0C23B1",
-     "#0124FE",
-     "#4960F4",
-     "#8997F0",
-     "#BFC6F3",
-     "#EBEDFA"
+     "#1D1438",
+     "#2D1D62",
+     "#402498",
+     "#5027D8",
+     "#7E62DA",
+     "#A999E1",
+     "#CFC7EB",
+     "#EFEDF8"
     ]
    },
-   "indigo-primary": {
+   "lavender-wash": {
     "role": "primary",
-    "displayName": "indigo-primary",
-    "canonical": "#3D5AFE",
+    "displayName": "라벤더 워시",
+    "canonical": "#F1ECFF",
     "tonalRamp": [
-     "#0C1440",
-     "#0F1E71",
-     "#0C25B1",
-     "#0127FE",
-     "#4962F4",
-     "#8999F0",
-     "#BFC7F3",
-     "#EBEDFA"
+     "#1A0C40",
+     "#280E71",
+     "#370BB2",
+     "#4300FF",
+     "#7548F5",
+     "#A489F1",
+     "#CCBFF3",
+     "#EFEBFA"
     ]
    },
-   "indigo-splash-bottom": {
+   "hero-violet-start": {
     "role": "primary",
-    "displayName": "indigo-splash-bottom",
-    "canonical": "#1F2E9E",
+    "displayName": "히어로 보라(시작)",
+    "canonical": "#5425A8",
     "tonalRamp": [
-     "#151938",
-     "#1F2661",
-     "#263496",
-     "#2A3ED5",
-     "#6472D8",
-     "#9AA2E0",
-     "#C7CBEA",
-     "#EDEEF7"
+     "#221637",
+     "#37205F",
+     "#4F2994",
+     "#682ED1",
+     "#8E67D5",
+     "#B39BDE",
+     "#D4C8E9",
+     "#F1EDF7"
     ]
    },
-   "indigo-dot": {
+   "hero-violet-mid": {
     "role": "primary",
-    "displayName": "indigo-dot",
-    "canonical": "#7F93FE",
+    "displayName": "히어로 보라(가운데)",
+    "canonical": "#713BE1",
     "tonalRamp": [
-     "#0C1540",
-     "#0F1E70",
-     "#0C26B0",
-     "#022AFD",
-     "#4964F3",
-     "#8A9AF0",
-     "#BFC7F3",
-     "#EBEDFA"
+     "#201339",
+     "#331B64",
+     "#49219C",
+     "#5F22DD",
+     "#885FDE",
+     "#AF97E3",
+     "#D2C6EC",
+     "#F0EDF8"
     ]
    },
-   "indigo-tint": {
+   "hero-violet-end": {
     "role": "primary",
-    "displayName": "indigo-tint",
-    "canonical": "#ECEFFF",
+    "displayName": "히어로 보라(끝)",
+    "canonical": "#9564EF",
     "tonalRamp": [
-     "#0C1440",
-     "#0E1E71",
-     "#0B25B2",
-     "#0028FF",
-     "#4863F5",
-     "#8999F1",
-     "#BFC7F3",
-     "#EBEDFA"
+     "#20113C",
+     "#341868",
+     "#4A1BA2",
+     "#6118E7",
+     "#8958E4",
+     "#B092E7",
+     "#D2C3EE",
+     "#F0ECF8"
     ]
    },
-   "indigo-tint-strong": {
-    "role": "primary",
-    "displayName": "indigo-tint-strong",
-    "canonical": "#D9DFFF",
-    "tonalRamp": [
-     "#0C1440",
-     "#0E1E71",
-     "#0B25B2",
-     "#0028FF",
-     "#4863F5",
-     "#8999F1",
-     "#BFC7F3",
-     "#EBEDFA"
-    ]
-   },
-   "selection": {
+   "night-plum": {
     "role": "neutral",
-    "displayName": "selection",
-    "canonical": "#D9DFFF",
+    "displayName": "야간 플럼",
+    "canonical": "#2B1252",
     "tonalRamp": [
-     "#0C1440",
-     "#0E1E71",
-     "#0B25B2",
-     "#0028FF",
-     "#4863F5",
-     "#8999F1",
-     "#BFC7F3",
-     "#EBEDFA"
+     "#231537",
+     "#39205F",
+     "#532994",
+     "#6E2ED1",
+     "#9267D5",
+     "#B59BDE",
+     "#D5C8EA",
+     "#F1EDF7"
     ]
    },
-   "ink-slate": {
+   "mist-lilac-top": {
     "role": "neutral",
-    "displayName": "ink-slate",
-    "canonical": "#18212F",
+    "displayName": "라일락 안개(위)",
+    "canonical": "#EEE4FF",
     "tonalRamp": [
-     "#1E242F",
-     "#303C50",
-     "#435879",
-     "#5677A9",
-     "#8298BA",
-     "#ACB9CE",
-     "#D0D7E1",
-     "#F0F2F5"
+     "#1F0C40",
+     "#330E71",
+     "#490BB2",
+     "#5E00FF",
+     "#8848F5",
+     "#AF89F1",
+     "#D2BFF3",
+     "#F0EBFA"
     ]
    },
-   "ink-slate-soft": {
+   "mist-lilac-mid": {
     "role": "neutral",
-    "displayName": "ink-slate-soft",
-    "canonical": "#3D4859",
+    "displayName": "라일락 안개(가운데)",
+    "canonical": "#DCC8FF",
     "tonalRamp": [
-     "#21252B",
-     "#373E49",
-     "#4F5B6E",
-     "#687A97",
-     "#8E9BAE",
-     "#B3BBC6",
-     "#D4D8DE",
-     "#F1F2F4"
+     "#1F0C40",
+     "#320E71",
+     "#480BB2",
+     "#5D00FF",
+     "#8748F5",
+     "#AF89F1",
+     "#D2BFF3",
+     "#F0EBFA"
     ]
    },
-   "slate-gray": {
+   "mist-lilac-end": {
     "role": "neutral",
-    "displayName": "slate-gray",
-    "canonical": "#5F6B7A",
+    "displayName": "라일락 안개(끝)",
+    "canonical": "#F1DDFF",
     "tonalRamp": [
-     "#23262A",
-     "#3A3F46",
-     "#545D69",
-     "#707E8F",
-     "#939DA9",
-     "#B6BCC3",
-     "#D5D8DC",
-     "#F1F2F3"
+     "#2B0C40",
+     "#480E71",
+     "#6D0BB2",
+     "#9600FF",
+     "#AD48F5",
+     "#C689F1",
+     "#DDBFF3",
+     "#F4EBFA"
     ]
    },
-   "slate-mute": {
+   "ink-plum": {
     "role": "neutral",
-    "displayName": "slate-mute",
-    "canonical": "#9AA4B2",
+    "displayName": "잉크 플럼",
+    "canonical": "#29184D",
     "tonalRamp": [
-     "#23262A",
-     "#393F46",
-     "#535C6A",
-     "#6E7D91",
-     "#929CAA",
-     "#B6BCC4",
-     "#D5D8DC",
-     "#F1F2F3"
+     "#211934",
+     "#36265A",
+     "#4F338A",
+     "#683DC2",
+     "#8E71CB",
+     "#B3A1D8",
+     "#D4CBE6",
+     "#F1EEF6"
     ]
    },
-   "nav-idle": {
+   "ink-plum-soft": {
     "role": "neutral",
-    "displayName": "nav-idle",
-    "canonical": "#8C9AB0",
+    "displayName": "잉크 플럼 소프트",
+    "canonical": "#4F3F6B",
     "tonalRamp": [
-     "#21252B",
-     "#373E49",
-     "#4F5B6E",
-     "#687A97",
-     "#8E9BAE",
-     "#B3BBC6",
-     "#D4D8DE",
-     "#F1F2F4"
+     "#241F2D",
+     "#3C334D",
+     "#584974",
+     "#765EA0",
+     "#9888B4",
+     "#B9AFCA",
+     "#D7D2E0",
+     "#F2F0F4"
     ]
    },
-   "page-gray": {
+   "dusk-gray": {
     "role": "neutral",
-    "displayName": "page-gray",
-    "canonical": "#E9EDF2",
+    "displayName": "더스크 그레이",
+    "canonical": "#73658D",
     "tonalRamp": [
-     "#20262D",
-     "#333E4C",
-     "#495C74",
-     "#5F7CA0",
-     "#889CB4",
-     "#AFBBCA",
-     "#D2D8DF",
-     "#F0F2F4"
+     "#25222B",
+     "#3D3848",
+     "#5A516C",
+     "#796A95",
+     "#9A90AC",
+     "#BAB4C5",
+     "#D7D4DD",
+     "#F2F1F4"
     ]
    },
-   "app-gray": {
+   "faded-lilac": {
     "role": "neutral",
-    "displayName": "app-gray",
-    "canonical": "#F3F5F8",
+    "displayName": "빛바랜 라일락",
+    "canonical": "#A497BD",
     "tonalRamp": [
-     "#1F252D",
-     "#333D4D",
-     "#485A74",
-     "#5E79A1",
-     "#879AB5",
-     "#AFBACA",
-     "#D2D7E0",
-     "#F0F2F4"
+     "#24202C",
+     "#3C354B",
+     "#584C71",
+     "#77639C",
+     "#988BB1",
+     "#B9B1C8",
+     "#D7D3DF",
+     "#F2F1F4"
     ]
    },
-   "field-gray": {
+   "lilac-tint": {
     "role": "neutral",
-    "displayName": "field-gray",
-    "canonical": "#F1F3F6",
+    "displayName": "라일락 틴트",
+    "canonical": "#F1ECFA",
     "tonalRamp": [
-     "#21252C",
-     "#353E4A",
-     "#4C5B70",
-     "#647A9B",
-     "#8B9AB1",
-     "#B1BAC8",
-     "#D3D8DE",
-     "#F1F2F4"
+     "#221736",
+     "#38235D",
+     "#502E8F",
+     "#6A35CA",
+     "#906CD1",
+     "#B49EDB",
+     "#D4C9E8",
+     "#F1EEF7"
     ]
    },
-   "track-gray": {
-    "role": "neutral",
-    "displayName": "track-gray",
-    "canonical": "#EEF1F5",
-    "tonalRamp": [
-     "#1F252D",
-     "#333E4D",
-     "#495B74",
-     "#5E7BA1",
-     "#889BB5",
-     "#AFBBCA",
-     "#D2D8E0",
-     "#F0F2F4"
-    ]
-   },
-   "soft-gray": {
-    "role": "neutral",
-    "displayName": "soft-gray",
-    "canonical": "#E6EBF2",
-    "tonalRamp": [
-     "#1E252F",
-     "#303D4F",
-     "#445A79",
-     "#5779A8",
-     "#839AB9",
-     "#ACBACD",
-     "#D0D7E1",
-     "#F0F2F5"
-    ]
-   },
-   "card-white": {
-    "role": "neutral",
-    "displayName": "card-white",
-    "canonical": "#FFFFFF",
-    "tonalRamp": [
-     "#262626",
-     "#404040",
-     "#5E5E5E",
-     "#808080",
-     "#9E9E9E",
-     "#BDBDBD",
-     "#D9D9D9",
-     "#F2F2F2"
-    ]
-   },
-   "emerald": {
+   "blossom-pink": {
     "role": "secondary",
-    "displayName": "emerald",
-    "canonical": "#0E9F6E",
+    "displayName": "블로섬 핑크",
+    "canonical": "#FF8FC0",
     "tonalRamp": [
-     "#103C2D",
-     "#16694D",
-     "#19A475",
-     "#15EAA2",
-     "#56E7B6",
-     "#91E8CB",
-     "#C3EFE0",
-     "#ECF9F4"
+     "#400C23",
+     "#710E3A",
+     "#B20B54",
+     "#FF0070",
+     "#F54893",
+     "#F189B6",
+     "#F3BFD5",
+     "#FAEBF1"
     ]
    },
-   "emerald-ink": {
+   "blossom-pink-deep": {
     "role": "secondary",
-    "displayName": "emerald-ink",
-    "canonical": "#0B8A60",
+    "displayName": "블로섬 핑크(진함)",
+    "canonical": "#E4579C",
     "tonalRamp": [
-     "#103D2E",
-     "#166A4E",
-     "#17A576",
-     "#13ECA4",
-     "#54E8B7",
-     "#90E9CC",
-     "#C2EFE0",
-     "#ECF9F4"
+     "#391326",
+     "#631C3F",
+     "#9B225D",
+     "#DC237E",
+     "#DD609D",
+     "#E297BC",
+     "#ECC6D8",
+     "#F8EDF2"
     ]
    },
-   "emerald-bright": {
-    "role": "secondary",
-    "displayName": "emerald-bright",
-    "canonical": "#34D399",
-    "tonalRamp": [
-     "#15372B",
-     "#206048",
-     "#29946D",
-     "#2DD296",
-     "#66D6AD",
-     "#9BDEC6",
-     "#C8EADD",
-     "#EDF7F4"
-    ]
-   },
-   "emerald-wash": {
-    "role": "secondary",
-    "displayName": "emerald-wash",
-    "canonical": "#E3F5EC",
-    "tonalRamp": [
-     "#1A3326",
-     "#285740",
-     "#37865E",
-     "#43BC80",
-     "#75C79E",
-     "#A4D5BD",
-     "#CCE5D9",
-     "#EFF6F2"
-    ]
-   },
-   "emerald-deep-ink": {
-    "role": "secondary",
-    "displayName": "emerald-deep-ink",
-    "canonical": "#2F6B55",
-    "tonalRamp": [
-     "#1C3029",
-     "#2D5345",
-     "#3E7F67",
-     "#4EB18D",
-     "#7CC0A7",
-     "#A8D1C2",
-     "#CFE3DB",
-     "#EFF5F3"
-    ]
-   },
-   "amber": {
+   "mint-done": {
     "role": "tertiary",
-    "displayName": "amber",
-    "canonical": "#F5B83D",
+    "displayName": "민트",
+    "canonical": "#6EE3B1",
     "tonalRamp": [
-     "#3E2E0F",
-     "#6C4F13",
-     "#A97813",
-     "#F3A60C",
-     "#ECB850",
-     "#ECCC8E",
-     "#F0E1C1",
-     "#F9F5EB"
+     "#153829",
+     "#1E6145",
+     "#269767",
+     "#29D68C",
+     "#64D9A7",
+     "#9AE0C2",
+     "#C7EADB",
+     "#EDF7F3"
     ]
    },
-   "amber-wash": {
+   "green-done": {
     "role": "tertiary",
-    "displayName": "amber-wash",
-    "canonical": "#FFF3DC",
+    "displayName": "그린",
+    "canonical": "#12B886",
     "tonalRamp": [
-     "#402E0C",
-     "#714F0E",
-     "#B2790B",
-     "#FFA800",
-     "#F5B948",
-     "#F1CD89",
-     "#F3E1BF",
-     "#FAF5EB"
+     "#113C2F",
+     "#176850",
+     "#1AA37A",
+     "#17E8A9",
+     "#57E5BA",
+     "#92E7CE",
+     "#C3EEE1",
+     "#ECF8F5"
     ]
    },
-   "coral-soft": {
+   "honey-gold": {
     "role": "tertiary",
-    "displayName": "coral-soft",
-    "canonical": "#FF8A80",
+    "displayName": "허니 골드",
+    "canonical": "#FFE17B",
     "tonalRamp": [
-     "#40100C",
-     "#71160E",
-     "#B2180B",
-     "#FF1400",
-     "#F55548",
-     "#F19189",
-     "#F3C3BF",
-     "#FAECEB"
+     "#40350C",
+     "#715B0E",
+     "#B28C0B",
+     "#FFC500",
+     "#F5CD48",
+     "#F1D989",
+     "#F3E7BF",
+     "#FAF6EB"
     ]
    },
-   "coral-chip-ink": {
-    "role": "tertiary",
-    "displayName": "coral-chip-ink",
-    "canonical": "#B3342C",
-    "tonalRamp": [
-     "#361816",
-     "#5E2522",
-     "#91322C",
-     "#CD3B32",
-     "#D2706A",
-     "#DCA19D",
-     "#E9CBC9",
-     "#F7EEEE"
-    ]
-   },
-   "coral-chip-sub": {
-    "role": "tertiary",
-    "displayName": "coral-chip-sub",
-    "canonical": "#7A3A35",
-    "tonalRamp": [
-     "#311D1C",
-     "#532F2C",
-     "#7F423E",
-     "#B2554D",
-     "#C0817C",
-     "#D1ABA8",
-     "#E3D0CE",
-     "#F5F0EF"
-    ]
-   },
-   "coral-wash": {
-    "role": "tertiary",
-    "displayName": "coral-wash",
-    "canonical": "#FCEDEB",
-    "tonalRamp": [
-     "#3A1713",
-     "#64241B",
-     "#9C2F21",
-     "#DE3721",
-     "#DE6D5E",
-     "#E39F96",
-     "#ECCAC5",
-     "#F8EEED"
-    ]
-   },
-   "coral-bar": {
-    "role": "tertiary",
-    "displayName": "coral-bar",
-    "canonical": "#F2B8B2",
-    "tonalRamp": [
-     "#391714",
-     "#63231D",
-     "#9A2E23",
-     "#DA3625",
-     "#DC6C61",
-     "#E29F98",
-     "#EBCAC6",
-     "#F8EEED"
-    ]
-   },
-   "danger": {
+   "coral-alert": {
     "role": "neutral",
-    "displayName": "danger",
-    "canonical": "#D9463E",
+    "displayName": "코랄",
+    "canonical": "#F04452",
     "tonalRamp": [
-     "#381615",
-     "#61221F",
-     "#962C26",
-     "#D5332A",
-     "#D86A64",
-     "#E09D9A",
-     "#EAC9C7",
-     "#F7EEED"
+     "#3D1014",
+     "#6A161D",
+     "#A51723",
+     "#EC1325",
+     "#E85560",
+     "#E99098",
+     "#EFC2C6",
+     "#F9ECED"
     ]
    },
    "warn-red-ink": {
     "role": "neutral",
-    "displayName": "warn-red-ink",
+    "displayName": "경고 붉은 잉크",
     "canonical": "#B4161F",
     "tonalRamp": [
      "#3B1214",
@@ -514,19 +349,259 @@
      "#F8ECED"
     ]
    },
-   "warn-wash": {
+   "glass-white": {
     "role": "neutral",
-    "displayName": "warn-wash",
-    "canonical": "#FFEBEE",
+    "displayName": "유리 화이트",
+    "canonical": "rgba(255,255,255,.78)"
+   },
+   "violet-royal": {
+    "role": "neutral",
+    "displayName": "violet-royal",
+    "canonical": "#5B33E0",
     "tonalRamp": [
-     "#400C14",
-     "#710E1D",
-     "#B20B24",
-     "#FF0026",
-     "#F54862",
-     "#F18998",
-     "#F3BFC6",
-     "#FAEBED"
+     "#1C133A",
+     "#2C1B64",
+     "#3D219C",
+     "#4D22DD",
+     "#7C5EDE",
+     "#A896E3",
+     "#CEC5EC",
+     "#EFEDF8"
+    ]
+   },
+   "violet-button-end": {
+    "role": "neutral",
+    "displayName": "violet-button-end",
+    "canonical": "#5D32C7",
+    "tonalRamp": [
+     "#201736",
+     "#33225D",
+     "#492C90",
+     "#5F33CC",
+     "#886AD2",
+     "#B09EDC",
+     "#D2C9E8",
+     "#F0EEF7"
+    ]
+   },
+   "logo-violet": {
+    "role": "neutral",
+    "displayName": "logo-violet",
+    "canonical": "#6B3FF0",
+    "tonalRamp": [
+     "#1B103D",
+     "#2B166A",
+     "#3B17A6",
+     "#4912ED",
+     "#7954E8",
+     "#A690E9",
+     "#CDC2EF",
+     "#EFECF9"
+    ]
+   },
+   "metro-dot-violet": {
+    "role": "neutral",
+    "displayName": "metro-dot-violet",
+    "canonical": "#6A40EC",
+    "tonalRamp": [
+     "#1B113C",
+     "#2B1768",
+     "#3B1AA3",
+     "#4A17E8",
+     "#7A57E5",
+     "#A792E7",
+     "#CEC3EE",
+     "#EFECF8"
+    ]
+   },
+   "splash-violet-top": {
+    "role": "neutral",
+    "displayName": "splash-violet-top",
+    "canonical": "#8E67F2",
+    "tonalRamp": [
+     "#1D103C",
+     "#2D1669",
+     "#4018A5",
+     "#5014EB",
+     "#7E55E7",
+     "#A991E8",
+     "#CFC3EF",
+     "#EFECF9"
+    ]
+   },
+   "splash-violet-mid": {
+    "role": "neutral",
+    "displayName": "splash-violet-mid",
+    "canonical": "#6234D0",
+    "tonalRamp": [
+     "#201637",
+     "#33215F",
+     "#492A92",
+     "#5F30CF",
+     "#8868D4",
+     "#AF9CDD",
+     "#D2C8E9",
+     "#F0EEF7"
+    ]
+   },
+   "splash-violet-bottom": {
+    "role": "neutral",
+    "displayName": "splash-violet-bottom",
+    "canonical": "#43199C",
+    "tonalRamp": [
+     "#1F1339",
+     "#331C64",
+     "#49229B",
+     "#5E23DC",
+     "#8860DD",
+     "#AF97E2",
+     "#D2C6EC",
+     "#F0EDF8"
+    ]
+   },
+   "page-violet-glow": {
+    "role": "neutral",
+    "displayName": "page-violet-glow",
+    "canonical": "#EDDDFF",
+    "tonalRamp": [
+     "#250C40",
+     "#3D0E71",
+     "#590BB2",
+     "#7800FF",
+     "#9948F5",
+     "#BA89F1",
+     "#D7BFF3",
+     "#F2EBFA"
+    ]
+   },
+   "page-violet-a": {
+    "role": "neutral",
+    "displayName": "page-violet-a",
+    "canonical": "#B697F2",
+    "tonalRamp": [
+     "#20123B",
+     "#341966",
+     "#4A1E9F",
+     "#601CE3",
+     "#895BE1",
+     "#B094E5",
+     "#D2C4ED",
+     "#F0ECF8"
+    ]
+   },
+   "page-violet-b": {
+    "role": "neutral",
+    "displayName": "page-violet-b",
+    "canonical": "#D7B8FF",
+    "tonalRamp": [
+     "#230C40",
+     "#390E71",
+     "#540BB2",
+     "#6F00FF",
+     "#9348F5",
+     "#B689F1",
+     "#D5BFF3",
+     "#F1EBFA"
+    ]
+   },
+   "page-violet-c": {
+    "role": "neutral",
+    "displayName": "page-violet-c",
+    "canonical": "#D9BAFF",
+    "tonalRamp": [
+     "#240C40",
+     "#3B0E71",
+     "#560BB2",
+     "#7300FF",
+     "#9548F5",
+     "#B789F1",
+     "#D6BFF3",
+     "#F1EBFA"
+    ]
+   },
+   "plum-chip-ink": {
+    "role": "neutral",
+    "displayName": "plum-chip-ink",
+    "canonical": "#523579",
+    "tonalRamp": [
+     "#251C30",
+     "#3D2C53",
+     "#5A3E7F",
+     "#784EB1",
+     "#997CC0",
+     "#BAA8D1",
+     "#D7CFE3",
+     "#F2EFF5"
+    ]
+   },
+   "small-button-ink": {
+    "role": "neutral",
+    "displayName": "small-button-ink",
+    "canonical": "#72519C",
+    "tonalRamp": [
+     "#251E2F",
+     "#3E304F",
+     "#5B4479",
+     "#7B57A8",
+     "#9B83B9",
+     "#BBACCD",
+     "#D8D0E1",
+     "#F2F0F5"
+    ]
+   },
+   "field-icon-ink": {
+    "role": "neutral",
+    "displayName": "field-icon-ink",
+    "canonical": "#8C7BB0",
+    "tonalRamp": [
+     "#24202D",
+     "#3B334C",
+     "#574973",
+     "#745FA0",
+     "#9688B4",
+     "#B8B0CA",
+     "#D6D2DF",
+     "#F2F0F4"
+    ]
+   },
+   "logo-tile": {
+    "role": "neutral",
+    "displayName": "logo-tile",
+    "canonical": "#F8F5FF",
+    "tonalRamp": [
+     "#1C0C40",
+     "#2C0E71",
+     "#3D0BB2",
+     "#4C00FF",
+     "#7C48F5",
+     "#A889F1",
+     "#CEBFF3",
+     "#EFEBFA"
+    ]
+   },
+   "scrim": {
+    "role": "neutral",
+    "displayName": "scrim",
+    "canonical": "rgba(0,0,0,.45)"
+   },
+   "progress-track": {
+    "role": "neutral",
+    "displayName": "progress-track",
+    "canonical": "rgba(41,18,94,.4)"
+   },
+   "blossom-pink-light": {
+    "role": "neutral",
+    "displayName": "blossom-pink-light",
+    "canonical": "#FF9BC8",
+    "tonalRamp": [
+     "#400C24",
+     "#710E3B",
+     "#B20B56",
+     "#FF0073",
+     "#F54895",
+     "#F189B8",
+     "#F3BFD6",
+     "#FAEBF1"
     ]
    },
    "bell-off-border": {
@@ -543,31 +618,6 @@
      "#F3BFC6",
      "#FAEBED"
     ]
-   },
-   "logo-check": {
-    "role": "neutral",
-    "displayName": "logo-check",
-    "canonical": "#FFD43B",
-    "tonalRamp": [
-     "#40350C",
-     "#715B0E",
-     "#B28D0B",
-     "#FFC700",
-     "#F5CF48",
-     "#F1DA89",
-     "#F3E7BF",
-     "#FAF7EB"
-    ]
-   },
-   "scrim": {
-    "role": "neutral",
-    "displayName": "scrim",
-    "canonical": "rgba(0,0,0,.45)"
-   },
-   "line": {
-    "role": "neutral",
-    "displayName": "line",
-    "canonical": "rgba(24,33,47,.08)"
    },
    "kakao-yellow": {
     "role": "neutral",
@@ -652,19 +702,24 @@
   },
   "shadows": [
    {
-    "name": "card",
-    "value": "0 1px 2px rgba(15,27,45,.04)",
-    "purpose": "흰 카드."
+    "name": "glass-card",
+    "value": "0 7px 20px rgba(75,42,119,.07)",
+    "purpose": "기본 유리 카드."
    },
    {
     "name": "current-stage",
-    "value": "0 6px 16px -8px rgba(15,27,45,.18)",
-    "purpose": "지금 단계 묶음."
+    "value": "0 10px 24px rgba(99,64,189,.16)",
+    "purpose": "일정의 지금 단계 묶음."
    },
    {
     "name": "hero",
-    "value": "0 18px 32px -20px rgba(15,27,45,.55)",
-    "purpose": "히어로 네이비 카드."
+    "value": "0 14px 28px rgba(87,48,149,.28)",
+    "purpose": "히어로·자금 요약 진한 카드."
+   },
+   {
+    "name": "primary-button",
+    "value": "0 8px 18px -10px rgba(93,50,199,.7)",
+    "purpose": "주 버튼 아래 빛."
    }
   ],
   "motion": [
@@ -682,16 +737,6 @@
     "name": "screen-leave",
     "value": ".7s cubic-bezier(.4,0,.2,1)",
     "purpose": "소개 화면이 천천히 사라짐."
-   },
-   {
-    "name": "press",
-    "value": ".16s cubic-bezier(.23,1,.32,1)",
-    "purpose": "버튼을 누르면 0.97로 줄어듦."
-   },
-   {
-    "name": "fund-bar-fill",
-    "value": ".7s cubic-bezier(.23,1,.32,1)",
-    "purpose": "자금 막대가 왼쪽에서 채워짐."
    }
   ],
   "breakpoints": [
@@ -708,7 +753,7 @@
    "refersTo": "button-primary",
    "description": "화면당 하나뿐인 다음 행동.",
    "html": "<button class=\"ds-btn\">저장하기</button>",
-   "css": ".ds-btn{font-family:Pretendard,'Apple SD Gothic Neo','Noto Sans KR',sans-serif;display:block;width:280px;border:0;border-radius:16px;background:#3D5AFE;color:#fff;font-weight:700;font-size:17px;padding:16px;box-shadow:0 8px 18px -10px rgba(15,27,45,.7);cursor:pointer;transition:transform .15s}.ds-btn:active{transform:scale(.98)}.ds-btn:focus-visible{outline:2px solid #3D5AFE;outline-offset:2px}"
+   "css": ".ds-btn{font-family:Pretendard,'Apple SD Gothic Neo','Noto Sans KR',sans-serif;display:block;width:280px;border:0;border-radius:16px;background:linear-gradient(135deg,#7A4DFF,#5D32C7);color:#fff;font-weight:700;font-size:17px;padding:16px;box-shadow:0 8px 18px -10px rgba(93,50,199,.7);cursor:pointer;transition:transform .15s}.ds-btn:active{transform:scale(.98)}.ds-btn:focus-visible{outline:2px solid #7A4DFF;outline-offset:2px}"
   },
   {
    "name": "Soft Button",
@@ -716,7 +761,7 @@
    "refersTo": "button-soft",
    "description": "두 번째 선택.",
    "html": "<button class=\"ds-btn-soft\">공유자 관리로 가기</button>",
-   "css": ".ds-btn-soft{font-family:Pretendard,'Apple SD Gothic Neo','Noto Sans KR',sans-serif;display:block;width:280px;border:0;border-radius:16px;background:#ECEFFF;color:#3D5AFE;font-weight:700;font-size:17px;padding:16px;cursor:pointer}.ds-btn-soft:hover{background:#D9DFFF}.ds-btn-soft:focus-visible{outline:2px solid #3D5AFE;outline-offset:2px}"
+   "css": ".ds-btn-soft{font-family:Pretendard,'Apple SD Gothic Neo','Noto Sans KR',sans-serif;display:block;width:280px;border:0;border-radius:16px;background:#EEE6FF;color:#5B33E0;font-weight:700;font-size:17px;padding:16px;cursor:pointer}.ds-btn-soft:hover{background:#E4DAFF}.ds-btn-soft:focus-visible{outline:2px solid #7A4DFF;outline-offset:2px}"
   },
   {
    "name": "White Pill Button",
@@ -724,7 +769,7 @@
    "refersTo": "button-white",
    "description": "시작·로그인 화면 전용.",
    "html": "<div class=\"ds-wrap\"><button class=\"ds-btn-wh\">로그인</button></div>",
-   "css": ".ds-wrap{background:linear-gradient(160deg,#F3F5F8,#F3F5F8);padding:20px}.ds-btn-wh{font-family:Pretendard,'Apple SD Gothic Neo','Noto Sans KR',sans-serif;width:260px;height:54px;border-radius:27px;background:#fff;color:#3D5AFE;font-weight:700;font-size:17px;border:1.5px solid rgba(15,27,45,.32);box-shadow:0 10px 20px -12px rgba(15,27,45,.55);cursor:pointer}.ds-btn-wh:focus-visible{outline:2px solid #3D5AFE;outline-offset:2px}"
+   "css": ".ds-wrap{background:linear-gradient(160deg,#EEE4FF,#DCC8FF);padding:20px}.ds-btn-wh{font-family:Pretendard,'Apple SD Gothic Neo','Noto Sans KR',sans-serif;width:260px;height:54px;border-radius:27px;background:#fff;color:#4B2BBF;font-weight:700;font-size:17px;border:1.5px solid rgba(122,77,255,.32);box-shadow:0 10px 20px -12px rgba(122,77,255,.55);cursor:pointer}.ds-btn-wh:focus-visible{outline:2px solid #7A4DFF;outline-offset:2px}"
   },
   {
    "name": "Glass Card with Task",
@@ -732,7 +777,7 @@
    "refersTo": "card-glass",
    "description": "기본 카드와 할 일 한 줄.",
    "html": "<div class=\"ds-bg\"><div class=\"ds-card\"><div class=\"ds-h\">지금 챙길 일</div><div class=\"ds-li\"><span class=\"ds-cb\"></span><div><b>이삿짐센터 견적 비교</b><small>11/5 · D-day</small></div><button class=\"ds-bo\">수정</button></div></div></div>",
-   "css": ".ds-bg{background:linear-gradient(160deg,#F3F5F8,#F3F5F8 52%,#F3F5F8);padding:16px;font-family:Pretendard,'Apple SD Gothic Neo','Noto Sans KR',sans-serif;color:#18212F}.ds-card{background:rgba(255,255,255,.78);border:1px solid rgba(255,255,255,.9);border-radius:20px;padding:18px 16px;box-shadow:0 7px 20px rgba(15,27,45,.07)}.ds-h{font-size:19px;font-weight:700;margin-bottom:8px}.ds-li{display:flex;gap:12px;align-items:center;padding:12px 0}.ds-li>div{flex:1}.ds-li b{display:block;font-size:15px}.ds-li small{font-size:12.5px;color:#5F6B7A}.ds-cb{width:20px;height:20px;border-radius:5px;border:2px solid #9AA4B2;background:rgba(255,255,255,.7)}.ds-bo{border:0;border-radius:9px;background:#ECEFFF;color:#3D4859;padding:7px 11px;font-size:13px;font-weight:600}"
+   "css": ".ds-bg{background:linear-gradient(160deg,#EEE4FF,#DCC8FF 52%,#F1DDFF);padding:16px;font-family:Pretendard,'Apple SD Gothic Neo','Noto Sans KR',sans-serif;color:#29184D}.ds-card{background:rgba(255,255,255,.78);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.9);border-radius:22px;padding:18px 16px;box-shadow:0 7px 20px rgba(75,42,119,.07)}.ds-h{font-size:19px;font-weight:700;margin-bottom:8px}.ds-li{display:flex;gap:12px;align-items:center;padding:12px 0}.ds-li>div{flex:1}.ds-li b{display:block;font-size:15px}.ds-li small{font-size:12.5px;color:#73658D}.ds-cb{width:20px;height:20px;border-radius:5px;border:2px solid #A492C2;background:rgba(255,255,255,.7)}.ds-bo{border:0;border-radius:9px;background:#EEE6FF;color:#72519C;padding:7px 11px;font-size:13px;font-weight:600}"
   },
   {
    "name": "Hero D-day Card",
@@ -740,7 +785,7 @@
    "refersTo": "hero-card",
    "description": "D-day, 진행률, 단계 점.",
    "html": "<div class=\"ds-hero\"><small>11/28 잔금일</small><div class=\"ds-big\">D-23<span>일 남음</span></div><div class=\"ds-bar\"><i></i></div></div>",
-   "css": ".ds-hero{font-family:Pretendard,'Apple SD Gothic Neo','Noto Sans KR',sans-serif;width:320px;border-radius:27px;padding:20px;color:#fff;background:linear-gradient(137deg,#5068FE,#2C45D9 54%,#0F1B2D);box-shadow:0 14px 28px rgba(15,27,45,.28)}.ds-hero small{font-size:14px;opacity:.85}.ds-big{font-size:56px;font-weight:800;letter-spacing:-2px;line-height:1.05}.ds-big span{font-size:20px;font-weight:600;letter-spacing:0;margin-left:6px}.ds-bar{height:10px;border-radius:5px;background:rgba(41,18,94,.4);margin-top:16px;overflow:hidden}.ds-bar i{display:block;width:16%;height:100%;background:#34D399;border-radius:5px}"
+   "css": ".ds-hero{font-family:Pretendard,'Apple SD Gothic Neo','Noto Sans KR',sans-serif;width:320px;border-radius:27px;padding:20px;color:#fff;background:linear-gradient(137deg,#5425A8,#713BE1 54%,#9564EF);box-shadow:0 14px 28px rgba(87,48,149,.28)}.ds-hero small{font-size:14px;opacity:.85}.ds-big{font-size:56px;font-weight:800;letter-spacing:-2px;line-height:1.05}.ds-big span{font-size:20px;font-weight:600;letter-spacing:0;margin-left:6px}.ds-bar{height:10px;border-radius:5px;background:rgba(41,18,94,.4);margin-top:16px;overflow:hidden}.ds-bar i{display:block;width:16%;height:100%;background:#6EE3B1;border-radius:5px}"
   },
   {
    "name": "Stage Tags",
@@ -748,7 +793,7 @@
    "refersTo": "stage-tag-current",
    "description": "단계 상태를 글자로 말하는 꼬리표.",
    "html": "<div class=\"ds-row\"><span class=\"ds-stg ds-dn\">1단계: 계약금 완료</span><span class=\"ds-stg ds-cur\">2단계: 중도금 단계 (현재)</span><span class=\"ds-stg ds-fu\">3단계: 잔금 단계 (D-23)</span></div>",
-   "css": ".ds-row{display:flex;flex-direction:column;gap:8px;align-items:flex-start;font-family:Pretendard,'Apple SD Gothic Neo','Noto Sans KR',sans-serif;}.ds-stg{border-radius:8px;padding:4px 9px;font-size:13px;font-weight:700}.ds-dn{background:#E3F5EC;color:#0B8A60}.ds-cur{background:#ECEFFF;color:#3D5AFE}.ds-fu{background:rgba(15,27,45,.12);color:#3D4859}"
+   "css": ".ds-row{display:flex;flex-direction:column;gap:8px;align-items:flex-start;font-family:Pretendard,'Apple SD Gothic Neo','Noto Sans KR',sans-serif;}.ds-stg{border-radius:8px;padding:4px 9px;font-size:13px;font-weight:700}.ds-dn{background:#E6F8F1;color:#12B886}.ds-cur{background:#F1ECFF;color:#4B2BBF}.ds-fu{background:rgba(85,53,139,.12);color:#4F3F6B}"
   },
   {
    "name": "Input Field",
@@ -756,65 +801,62 @@
    "refersTo": "input-field",
    "description": "기본 입력칸.",
    "html": "<label class=\"ds-lb\">이사 갈 집<input class=\"ds-in\" placeholder=\"예: 성남 분당구 정자동\"></label>",
-   "css": ".ds-lb{display:block;width:300px;font-family:Pretendard,'Apple SD Gothic Neo','Noto Sans KR',sans-serif;font-size:14px;font-weight:600;color:#3D4859}.ds-in{display:block;width:100%;box-sizing:border-box;margin-top:8px;background:#F1F3F6;border:0;border-radius:12px;padding:14px;font-size:16px;color:#18212F}.ds-in:focus-visible{outline:2px solid #3D5AFE;outline-offset:2px}"
+   "css": ".ds-lb{display:block;width:300px;font-family:Pretendard,'Apple SD Gothic Neo','Noto Sans KR',sans-serif;font-size:14px;font-weight:600;color:#4F3F6B}.ds-in{display:block;width:100%;box-sizing:border-box;margin-top:8px;background:#F1ECFA;border:0;border-radius:12px;padding:14px;font-size:16px;color:#29184D}.ds-in:focus-visible{outline:2px solid #7A4DFF;outline-offset:2px}"
   },
   {
    "name": "Bottom Navigation",
    "kind": "nav",
    "refersTo": "bottom-nav",
    "description": "볼록 곡선과 핑크 동그라미가 선택 탭을 따라가요.",
-   "html": "<nav class=\"ds-nav\"><span class=\"ds-bump\"><svg viewBox=\"0 0 150 32\" preserveAspectRatio=\"none\"><path d=\"M0 32C20 32 28 29 37 21C47 11 58 1 75 1S103 11 113 21C122 29 130 32 150 32V33H0Z\" fill=\"#0F1B2D\"/></svg><i></i></span><button>홈</button><button class=\"on\">일정</button><button>자금</button><button>서비스</button><button>마이</button></nav>",
-   "css": ".ds-nav{position:relative;display:flex;width:360px;margin-top:40px;background:#0F1B2D;padding:10px 6px 8px;font-family:Pretendard,'Apple SD Gothic Neo','Noto Sans KR',sans-serif;}.ds-nav button{flex:1;position:relative;z-index:1;border:0;background:none;color:#8C9AB0;font-size:11px;font-weight:600;padding:20px 0 0}.ds-nav button.on{color:#fff;font-weight:700}.ds-bump{position:absolute;top:-23px;left:30%;width:150px;height:24px;margin-left:-75px}.ds-bump svg{width:100%;height:100%;display:block}.ds-bump i{position:absolute;left:50%;top:5px;width:50px;height:50px;margin-left:-25px;border-radius:50%;background:linear-gradient(145deg,#FFFFFF,#E6EBF2);box-shadow:0 6px 16px rgba(15,27,45,.45)}"
+   "html": "<nav class=\"ds-nav\"><span class=\"ds-bump\"><svg viewBox=\"0 0 150 32\" preserveAspectRatio=\"none\"><path d=\"M0 32C20 32 28 29 37 21C47 11 58 1 75 1S103 11 113 21C122 29 130 32 150 32V33H0Z\" fill=\"#2B1252\"/></svg><i></i></span><button>홈</button><button class=\"on\">일정</button><button>자금</button><button>서비스</button><button>마이</button></nav>",
+   "css": ".ds-nav{position:relative;display:flex;width:360px;margin-top:40px;background:#2B1252;padding:10px 6px 8px;font-family:Pretendard,'Apple SD Gothic Neo','Noto Sans KR',sans-serif;}.ds-nav button{flex:1;position:relative;z-index:1;border:0;background:none;color:#CDB9F2;font-size:11px;font-weight:600;padding:20px 0 0}.ds-nav button.on{color:#fff;font-weight:700}.ds-bump{position:absolute;top:-23px;left:30%;width:150px;height:24px;margin-left:-75px}.ds-bump svg{width:100%;height:100%;display:block}.ds-bump i{position:absolute;left:50%;top:5px;width:50px;height:50px;margin-left:-25px;border-radius:50%;background:linear-gradient(145deg,#FF9BC8,#E4579C);box-shadow:0 6px 16px rgba(228,87,156,.45)}"
   }
  ],
  "narrative": {
   "northStar": "든든한 이사 동행",
-  "overview": "24dday는 이사를 준비하는 몇 주 동안 옆에서 \"지금 이것만 하면 돼요\"라고 알려주는 차분한 동반자예요. 토스·Linear처럼 회색 바탕 위에 흰 카드를 여유 있게 놓고, 장식 대신 글자 크기·굵기와 숫자로 위계를 만들어요. 화면 맨 위의 인디고 카드 하나(D-day 히어로, 자금 요약)만 무게를 갖고, 나머지는 흰 카드로 조용히 정리해요.\n\n색은 신뢰감 있는 인디고 블루가 뼈대이고, 에메랄드·앰버·코랄 세 가지 작은 색이 상태를 말해요. 보라 그라데이션, 유리 블러, 색깔 빛 번짐은 쓰지 않아요. 모바일 한 손 사용이 기본이고 앱 폭은 최대 430px이에요.",
+  "overview": "24dday는 이사를 준비하는 몇 주 동안 옆에서 \"지금 이것만 하면 돼요\"라고 알려주는 차분한 동반자예요. 화면은 연한 라일락 안개 위에 흰 유리 카드를 띄우고, 정말 중요한 것(D-day, 지금 단계, 필요한 돈)만 진한 보라 카드로 들어 올려요. 장식보다 정보가 먼저 보이고, 한 화면에서 해야 할 행동은 하나예요.\n\n모바일 한 손 사용이 기본이에요. 앱 폭은 최대 430px이고, 카드 사이 리듬은 일정하게 유지해요. 부품은 단정하고 차분해요. 둥근 모서리와 부드러운 그림자로 친근함을 주되, 색과 움직임은 의미가 있을 때만 써요. 상태는 색 하나만으로 알리지 않고 글자와 아이콘을 함께 써요.",
   "keyCharacteristics": [
-   "회색 바탕(`app-gray`) + 흰 카드, 얇은 선과 아주 옅은 그림자",
-   "인디고 카드는 화면 맨 위 하나만",
-   "세 가지 상태 색: 에메랄드(끝냄·보유), 앰버(받을 돈), 코랄(부족·주의)",
-   "진한 네이비 하단 메뉴, 선택한 탭 위로 볼록 솟은 곡선과 인디고 동그라미",
-   "금액·날짜는 모두 같은 폭 숫자(tabular-nums)"
+   "연라일락 그라데이션 바탕 + 흰 유리 카드로 구역 나누기",
+   "진한 보라 그라데이션은 히어로·자금 요약·지금 단계에만",
+   "세 가지 상태 색: 초록(끝냄·보유), 노랑(앞으로 들어옴), 핑크(지금·주의)",
+   "진한 보라 하단 메뉴, 선택한 탭 위로 볼록 솟은 곡선과 핑크 동그라미",
+   "쉬운 한국어, 큰 글씨, 넉넉한 누르는 영역"
   ],
   "rules": [
    {
     "name": "The Three Dots Rule",
-    "body": "상태 색은 세 가지뿐이에요. 에메랄드 = 끝냄·이미 있음, 앰버 = 앞으로 들어옴, 코랄 = 부족·주의. 홈과 자금, 어느 화면에서든 같은 뜻으로 써요.",
-    "section": "colors"
+    "body": "상태 색은 세 가지뿐이에요. 초록 = 끝냄·이미 있음, 노랑 = 앞으로 들어옴, 핑크 = 지금·주의. 홈과 자금, 어느 화면에서든 같은 뜻으로 써요.",
+    "section": "Colors"
    },
    {
     "name": "The Quiet Alarm Rule",
-    "body": "진한 빨강은 되돌릴 수 없는 행동과 실제 오류에만 써요. 지난 일, 부족한 돈 같은 안내는 회색 글씨나 연한 코랄 칩으로 조용히 알려요.",
-    "section": "colors"
-   },
-   {
-    "name": "The No Glow Rule",
-    "body": "사방으로 번지는 색깔 빛과 유리 블러는 쓰지 않아요. 흔한 AI 템플릿처럼 보여요. 그림자는 중립 검정으로 아래로만 떨어져요.",
-    "section": "colors"
+    "body": "빨강은 되돌릴 수 없는 행동과 실제 오류에만 써요. 지난 일, 부족한 돈 같은 안내는 회색 글씨나 작은 핑크 점으로 조용히 알려요.",
+    "section": "Colors"
    },
    {
     "name": "The 14px Floor Rule",
-    "body": "읽어야 하는 문장은 14px 이상. 12.5~13px는 날짜·범례 같은 부가 정보에만 써요.",
-    "section": "typography"
+    "body": "읽어야 하는 문장은 14px 이상이에요. 12.5px는 날짜·부가 정보 한 줄에만 써요.",
+    "section": "Typography"
    },
    {
-    "name": "The One Heavy Card Rule",
-    "body": "한 화면에서 인디고 카드는 맨 위 하나뿐이에요.",
-    "section": "elevation & depth"
+    "name": "The Three Layers Rule",
+    "body": "한 화면에서 진한 보라 카드는 맨 위 하나(히어로 또는 요약)뿐이에요. 나머지는 유리 카드로 둬야 시선이 흩어지지 않아요.",
+    "section": "Elevation & Depth"
    }
   ],
   "dos": [
-   "**Do** 상태는 세 가지 점 색과 함께 글자로도 적어요(\"완료\", \"날짜 지남\", \"부족\").",
-   "**Do** 금액·날짜에는 같은 폭 숫자를 써요.",
+   "**Do** 상태는 The Three Dots Rule의 세 색과 함께 글자로도 적어요(\"완료\", \"날짜 지남\", \"부족\").",
+   "**Do** 진한 보라 카드는 화면 맨 위 하나만 써요.",
    "**Do** 누르는 영역은 44px 이상으로, 작은 체크칸은 보이지 않는 여백으로 넓혀요.",
+   "**Do** 어려운 용어의 쉬운 설명은 필요할 때 펼쳐 보게 해요(? 버튼, 수정 창).",
    "**Do** 움직임은 `prefers-reduced-motion`에서 멈춰요."
   ],
   "donts": [
-   "**Don't** 유리 블러, 사방으로 번지는 색깔 빛을 쓰지 마세요.",
-   "**Don't** 안내 문구에 진한 빨강 굵은 글씨를 쓰지 마세요.",
-   "**Don't** 쉬운 설명을 목록에 늘 펼쳐 두지 마세요.",
-   "**Don't** 한 화면에 인디고 카드를 두 개 이상 두지 마세요."
+   "**Don't** 안내 문구에 진한 빨강 굵은 글씨를 쓰지 마세요(The Quiet Alarm Rule).",
+   "**Don't** 지금 단계 꼬리표를 진한 핑크로 칠하지 마세요. 연보라 바탕 + 딥 바이올렛이에요.",
+   "**Don't** 빛바랜 라일락(`faded-lilac`)을 읽어야 하는 글씨에 쓰지 마세요.",
+   "**Don't** 쉬운 설명을 목록에 늘 펼쳐 두지 마세요. 글이 많아지면 시선이 흩어져요.",
+   "**Don't** 버튼에 진한 핑크 바탕을 쓰지 마세요. 시작 화면 버튼은 흰 바탕 + 보라 글씨예요."
   ]
  }
 }
